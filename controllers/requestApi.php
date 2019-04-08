@@ -18,6 +18,6 @@ for ($i = 0; $i < sizeof($matches->matches); $i++)
     echo '<pre>';
 }
 
-echo '<pre>';
-print_r($matches->matches);
-echo '</pre>';
+// echo '<pre>';
+// print_r($matches->matches);
+// echo '</pre>';
