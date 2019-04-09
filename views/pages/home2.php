@@ -1,9 +1,9 @@
 <?php include '../views/partials/header.php' ?>
 
-    <div class="container">
+    <div class="home-container-connected">
         <div class="content">
-            <h1>Défis tes amis sur PEA (Déjà connecté</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit a augue sit amet porttitor. Mauris sit amet urna euismod, molestie eros sed, interdum lectus. Praesent sit amet tortor sollicitudin, eros malesuada tortor sit amet, porta sit amet a erat. </p>
+            <h1>Pronos entre amis</h1>
+            <p>Tu peux créer ta propre ligue ou rejoindre la ligue de tes amis/collègue</p>
             <button class="nouveauCompte" type="button">Je crée mon compte</button>
         </div>
         <div class="illustration">
