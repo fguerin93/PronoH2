@@ -16,6 +16,7 @@ else if ($q == 'inscription')
     $controller = 'inscription';
 }
 
+
 // else if (preg_match('/^delete\/[1-9][0-9]*$/', $q))
 // {
 //     $controller = 'delete';
