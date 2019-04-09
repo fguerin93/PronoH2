@@ -1,3 +1,9 @@
+<?php
+
+include '../views/partials/header.php';
+
+?>
+
 <div align="center">
          <h2>Inscription</h2>
          <br /><br />
@@ -57,4 +63,11 @@
             echo '<font color="red">'.$erreur."</font>";
          }
          ?>
-      </div>
+</div>
+
+
+<?php
+
+include '../views/partials/footer.php';
+
+?>
