@@ -19,7 +19,23 @@
                 <li><a href=""> Mes ligues</a></li>
                 <li><a href=""> Mes pronos</a></li>
                 <li><a href=""><img src="<?=URL?>assets/images/icon-1.png" alt=""  class="info"></a></li>
-                <li><a href="<?=URL?>deconnexion"><img src="<?=URL?>assets/images/icon-2.png" alt=""></a></li>
+                <li><img src="<?=URL?>assets/images/icon-2.png" alt="" class="icon-connexion"></li>
             </ul>
         </nav>
     </header>
+    <div class="container-login">
+        <div class="login">
+            <form method="POST" action="">
+             <div>
+                    <label for="login">Pseudo</label><br>
+                 <input type="text" name="" placeholder="Sam" />
+             </div>
+             <div>
+                 <label for="password">Mot de passe</label><br>
+                 <input type="password" name="" placeholder="2UB763" />
+             </div> 
+             <button type="submit">Connexion</button>
+          </form>
+     </div>
+    </div>
+    

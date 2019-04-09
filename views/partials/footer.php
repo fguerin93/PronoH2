@@ -6,5 +6,6 @@
     </div>
     <p>Copyright 2019<span>©PronoEntreAmi</span></p>
 </footer>
+<script src="<?=URL?>assets/js/login.js"></script>
 </body>
 </html>
