@@ -1,17 +1,23 @@
 /************
     nav
 *************/
-header{
+
+header
+{
     width:100%;
     height: 62px;
     background:#44538F;
 }
-header nav{
+
+header nav
+{
     display : flex;
     justify-content: flex-end;
     margin-right:5%;
 }
-header nav .title-nav{
+
+header nav .title-nav
+{
     position: absolute;
     left:5%;
     text-decoration: none;
@@ -21,42 +27,56 @@ header nav .title-nav{
     text-transform: uppercase;
     padding-top:21px;
 }
-header nav ul{
+
+header nav ul
+{
     display: flex;
     flex-direction: row;
 }
-header nav ul li{
+
+header nav ul li
+{
     color:white;
     font-family:"amaranth", sans-serif;
     font-size:20px;
     padding-top:21px;
     padding-left:70px;
 }
-header nav ul li a{
+
+header nav ul li a
+{
     text-decoration: none;
 }
-header nav ul li a img{
+
+header nav ul li img
+{
     width:80%;
 }
-header nav ul li .info{
+
+header nav ul li .info
+{
     margin-left:70%;
 }
+
 /*******************
     LOGIN
 ********************/
 /*******************
     connexion 
 ********************/
-.container-connexion{
+
+.container-connexion
+{
     position: absolute;
     left:70%;
     width:25%;
     height: 45%;
     z-index:1;
     display:none;
-
 }
-.login{
+
+.login
+{
     width:100%;
     height: 100%;
     margin-top:5%;
@@ -69,11 +89,14 @@ header nav ul li .info{
     background:white;
 }
 
-.login div{
+.login div
+{
     display:flex;
     margin-top:12%;
 }
-.login label{
+
+.login label
+{
     position: absolute;
     margin-left:2%;
     padding:0% 1%;
@@ -82,7 +105,9 @@ header nav ul li .info{
     font-size: 16px;
     background:white;
 }
-.login input{
+
+.login input
+{
     width:240px;
     padding:10% 5%;
     border:1px solid #5D5D5D;
@@ -91,7 +116,9 @@ header nav ul li .info{
     display:flex;
     justify-content: center;
 }
-.login button{
+
+.login button
+{
     width:240px;
     margin-top:10%;
     padding:20px 50px 35px 50px;
@@ -102,28 +129,35 @@ header nav ul li .info{
     border-radius:5px;
     font-size:18px;
 }
+
 /*******************
     deconnexion
 ********************/
 
-.container-deconnexion{
+.container-deconnexion
+{
     position: absolute;
     left:70%;
     width:25%;
     height: 35%;
     z-index:1;
-    display:block;
+    display:none;
 }
-.container-deconnexion .title{
+
+.container-deconnexion .title
+{
 
     margin-left:2%;
     margin-right:5%;
     font-family:"amaranth", sans-serif;
     font-size: 16px;
 }
-.container-deconnexion p{
+
+.container-deconnexion p
+{
     font-family: 'Titillium Web', sans-serif;
 }
+
 .container-deconnexion .button-deconnected
 {
     width:240px;
@@ -136,9 +170,12 @@ header nav ul li .info{
     border-radius:5px;
     font-size:18px;
 }
+
+
 /************
     body
 *************/
+
 .home-container
 {
     position: absolute;
@@ -146,12 +183,14 @@ header nav ul li .info{
     height: 100%;
     margin-left:10%;
 }
+
 .home-container .content
 {
     position: absolute;
     top:15%;
     width:50%;
 }
+
 .home-container .content h1
 {
     width:400px;
@@ -161,6 +200,7 @@ header nav ul li .info{
     font-family: 'Amaranth', sans-serif;
     font-weight: bold;
 }
+
 .home-container .content p
 {
     font-family: 'Titillium Web', sans-serif;
@@ -168,6 +208,7 @@ header nav ul li .info{
     font-size:22px;
     margin-bottom:7%;
 }
+
 .home-container .content button
 {
     font-family:"amaranth", sans-serif;
@@ -189,15 +230,19 @@ header nav ul li .info{
     width:50%;
     margin-left:50%;
 }
+
 .home-container .illustration img
 {
     padding-left:10%;
     width:90%;
 }
 
+
 /************
     body home when connected
 *************/
+
+
 .home-container-connected
 {
     position: absolute;
@@ -205,12 +250,14 @@ header nav ul li .info{
     height: 100%;
     margin-left:10%;
 }
+
 .home-container-connected .content
 {
     position: absolute;
     top:15%;
     width:50%;
 }
+
 .home-container-connected .content h1
 {
     width:400px;
@@ -220,6 +267,7 @@ header nav ul li .info{
     margin-bottom:50px;
     line-height:71px;
 }
+
 .home-container-connected .content p
 {
     font-family: 'Titillium Web', sans-serif;
@@ -231,11 +279,46 @@ header nav ul li .info{
 .home-container-connected .content .league-container
 {
     width: 440px;
-    margin-left: 163px;
     display:flex;
     flex-flow: column;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.home-container-connected .content .league-container .league
+{
+    position: relative;
+    font-family:"amaranth", sans-serif;
+    background-color: #44538F;
+    color: #ffffff;
+    width: 430px;
+    height: 90px;
+    border-radius: 5px;
+    margin-bottom: 45px;
+    display:flex;
+    align-items: center;
+}
+
+.home-container-connected .content .league-container .league h2
+{
+    position: absolute;
+    font-size: 25px;
+    left: 22px;
+}
+
+.home-container-connected .content .league-container .league button
+{
+    position: absolute;
+    right: 22px;
+    bottom: 19px;
+    font-family:"amaranth", sans-serif;
+    font-size: 20px;
+    width: 142px;
+    height: 52px;
+    background-color: #3CB833;
+    border-radius: 26px;
+    border: none;
+    color: #ffffff;
 }
   
 
@@ -243,31 +326,46 @@ header nav ul li .info{
 /************
     footer
 *************/
-footer{
+
+
+footer
+{
     position: absolute;
     top:120%;
     width:100%;
     background:#44538F;
-
 }
-footer .link{
+
+footer .link
+{
     display:flex;
     justify-content: center;
 }
-footer a {
+
+footer a 
+{
     text-decoration: none;
     padding:25px 20px;
     color:white;
     font-family:"amaranth", sans-serif;
     font-weight: 200;
 }
-footer p{
+
+footer p
+{
     display:flex;
     justify-content: center;
     color: white;
     font-family:"amaranth", sans-serif;
     padding:10px 30px 25px 30px;
 }
-footer span{
+
+footer span
+{
     color:#3CB833;
+}
+
+.hidden
+{
+    display: none;
 }

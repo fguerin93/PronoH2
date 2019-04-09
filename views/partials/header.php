@@ -27,30 +27,28 @@
     <div class="container-connexion">
         <div class="login">
             <form method="POST" action="">
-             <div>
+                <div>
                     <label for="login">Pseudo</label><br>
-                 <input type="text" name="" placeholder="Sam" />
-             </div>
-             <div>
-                 <label for="password">Mot de passe</label><br>
-                 <input type="password" name="" placeholder="2UB763" />
-             </div> 
-             <button type="submit">Connexion</button>
-          </form>
-     </div>
+                    <input type="text" name="pseudoconnect" placeholder="pseudo" />
+                </div>
+                <div>
+                    <label for="password">Mot de passe</label><br>
+                    <input type="password" name="passwordconnect" placeholder="Mot de passe" />
+                </div> 
+                <button type="submit" name="formconnexion">Connexion</button>
+            </form>
+        </div>
     </div>
     <div class="container-deconnexion">
         <div class="login">
-            <form method="POST" action="">
-             <div>
-                <p class="title">Pseudo</p>
-                <p>Sam</p>
-             </div>
-             <div>
-                <p class="title">Email</p>
-                <p>Sam@gmail.com</p>  
-             </div> 
-             <button type="submit" class="button-deconnected">Deconnexion</button>
-          </form>
-     </div>
+                <div>
+                    <p class="title">Pseudo</p>
+                    <p><?= $_SESSION['pseudo'] ?></p>
+                </div>
+                <div>
+                    <p class="title">Email</p>
+                    <p><?= $_SESSION['mail'] ?></p>  
+                </div> 
+                <a href="<?= URL ?>deconnexion"><button class="button-deconnected">Deconnexion</button></a>
+        </div>
     </div>

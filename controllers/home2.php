@@ -6,14 +6,15 @@ $title = 'Home2';
 
 include '../database/database.php';
 
-$reqleague = $pdo->query("SELECT name FROM league WHERE id<=2");
+var_dump($_SESSION);
+$reqleague = $pdo->query('SELECT name FROM league WHERE id_creator<='.$_SESSION['id']);
 $leagues = $reqleague->fetchAll();
 
 for($i = 0; $i < 2; $i++)
 {
-echo '<pre>';
-print_r($leagues[$i]->name);
-echo '</pre>';
+    echo '<pre>';
+    print_r($leagues[$i]->name);
+    echo '</pre>';
 }
 
 include '../views/pages/home2.php';
