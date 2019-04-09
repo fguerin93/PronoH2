@@ -1,7 +1,7 @@
-form{
+.new-league-container form{
     margin-top:8%;
 }
-form label{
+.new-league-container form label{
     position: absolute;
     font-family:"amaranth", sans-serif;
     font-size: 16px;
@@ -10,17 +10,17 @@ form label{
     padding: 2%;
 
 }
-form input{
+.new-league-container form input{
     width:325px;
     padding:5%;
     border:1px solid #5D5D5D;
     border-radius: 5px;
     font-family: 'Titillium Web', sans-serif;
 }
-form div{
+.new-league-container form div{
     margin-bottom:3%;
 }
-form textarea{
+.new-league-container form textarea{
     width:400px;
     height: 150px;
     padding:5%;
@@ -28,10 +28,10 @@ form textarea{
     border-radius: 5px;
     font-family: 'Titillium Web', sans-serif;
 }
-.content h1{
+.new-league-container .content h1{
     margin-bottom:20px;
 }
-.container .content button{
+.new-league-container .container .content button{
     width:200px;
     font-family:"amaranth", sans-serif;
     background:#3CB833;
