@@ -16,15 +16,14 @@ else if ($q == 'inscription')
     $controller = 'inscription';
 }
 
-<<<<<<< HEAD
 else if ($q == 'league')
 {
     $controller = 'createLeague';
-=======
+}
+  
 else if ($q == 'connexion')
 {
     $controller = 'connexion';
->>>>>>> b16bb09a0b44aaec1a0f920603a4c1791aef393a
 }
 
 
