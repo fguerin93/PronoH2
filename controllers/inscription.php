@@ -28,7 +28,14 @@ if(isset($_POST['forminscription']))
                         {
                             $insertmbr = $pdo->prepare("INSERT INTO users(pseudo, mail, password) VALUES(?, ?, ?)");
                             $insertmbr->execute(array($pseudo, $mail, $password));
-                            $erreur = "Votre compte a bien été créé ! <a href=\"connexion.php\">Me connecter</a>";
+                            $erreur = "Votre compte a bien été créé !";
+                            $requser = $pdo->prepare("SELECT * FROM users WHERE pseudo = ?");
+                            $requser->execute(array($id, $pseudo, $mail));
+                            $userinfo = $requser->fetch();
+                            $_SESSION['id'] = $userinfo->id;
+                            $_SESSION['pseudo'] = $userinfo->pseudo;
+                            $_SESSION['mail'] = $userinfo->mail;
+                            header('location: home');
                         } else {
                             $erreur = "Vos mots de passes ne correspondent pas !";
                         }
