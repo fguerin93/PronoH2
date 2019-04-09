@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?=URL?>assets/css/style.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/reset.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/league.css">
+    <link rel="stylesheet" href="<?=URL?>assets/css/myLeagues.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 </head>
 <body>
