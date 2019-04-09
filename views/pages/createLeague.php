@@ -1,25 +1,26 @@
 <?php
 include '../views/partials/header.php';
 ?>
+
     <div class="new-league-container">
             <div class="content">
                 <h1>Nouvelle ligue</h1>
                 <p>C'est le moment de créer ta ligue !</p>
-                <form action="" method="post">
+                <form action="" method="POST">
                     <div>
                         <label for="name">Nom de la ligue</label><br>
-                        <input type="text" placeholder="Hetic pronos">
+                        <input type="text" name="name" placeholder="Hetic pronos">
                     </div>
                     <div>
                         <label for="name">Code de l'invitation</label><br>
-                        <input type="text" placeholder="2UB763">
+                        <input type="text" name="code" placeholder="2UB763">
                     </div>
                     <div>
                         <label for="name">Message d'introduction de la ligue</label><br>
                         <textarea name="text" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
                     </div>
                     <p>Maintenant invite tes amis !</p>
-                    <button type="submit">Créer ma ligue</button>
+                    <button type="submit" name="formcreationleague">Créer ma ligue</button>
 
                 </form>
             </div>
