@@ -16,6 +16,11 @@ else if ($q == 'inscription')
     $controller = 'inscription';
 }
 
+else if ($q == 'league')
+{
+    $controller = 'createLeague';
+}
+
 
 // else if (preg_match('/^delete\/[1-9][0-9]*$/', $q))
 // {
