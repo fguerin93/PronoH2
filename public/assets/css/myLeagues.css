@@ -1,41 +1,41 @@
-h1{
+.myLeague-h1{
   font-family:"amaranth", sans-serif;
   font-size: 58px;
   font-weight: bold;
 }
 
-h2{
+.myLeague-h2{
   font-family:"amaranth", sans-serif;
   font-size: 25px;
   margin-top: 30px;
   color: #ffffff;
 }
 
-img{
+.myleague-square1Logo img{
   width: 47px;
   height: 47px;
 }
 
-.content{
+.myleague-content{
   margin-bottom: 56px;
 }
 
-.content h1{
+.myleague-content h1{
   margin-left: 163px;
 }
 
-.content p{
+.myleague-content p{
   font-family: 'Titillium Web', sans-serif;
   width: 430px;
   margin-left: 163px;
 }
 
-.globalSquares{
+.myleague-globalSquares{
   display: flex;
   margin-top: 346px;
 }
 
-.leaguesSquares1, .leaguesSquares2{
+.myleague-leaguesSquares1, .myleague-leaguesSquares2{
   width: 440px;
   margin-left: 163px;
   display: flex;
@@ -44,16 +44,16 @@ img{
   justify-content: space-between;
 }
 
-.leaguesSquares2 .square2{
+.myleague-leaguesSquares2 .myleague-square2{
   margin-right: 163px;
 }
 
-.leaguesSquares1 .square1  .square1Logo, .leaguesSquares2 .square2  .square2Logo {
+.myleague-leaguesSquares1 .myleague-square1  .myleague-square1Logo, .myleague-leaguesSquares2 .myleague-square2  .myleague-square2Logo {
   display: flex;
   align-items: center;
 }
 
-.leaguesSquares1 .square1, .leaguesSquares2 .square2{
+.myleague-leaguesSquares1 .myleague-square1, .myleague-leaguesSquares2 .myleague-square2{
   position: relative;
   font-family:"amaranth", sans-serif;
   background-color: #44538F;
@@ -64,21 +64,21 @@ img{
   margin-bottom: 45px;
 }
 
-.leaguesSquares1 .square1 h2, .leaguesSquares2 .square2 h2{
+.myleague-leaguesSquares1 .myleague-square1 h2, .myleague-leaguesSquares2 .myleague-square2 h2{
   margin-left: 15px;
 }
 
-.leaguesSquares1 .square1  .square1Logo, .leaguesSquares2 .square2  .square2Logo {
+.myleague-leaguesSquares1 .myleague-square1  .myleague-square1Logo, .myleague-leaguesSquares2 .myleague-square2  .myleague-square2Logo {
   display: flex;
   align-items: center;
   margin-left: 20px;
 }
 
-.leaguesSquares1 .square1  .square1Logo img, .leaguesSquares2 .square2  .square2Logo  img {
+.myleague-leaguesSquares1 .myleague-square1  .myleague-square1Logo img, .myleague-leaguesSquares2 .myleague-square2  .myleague-square2Logo  img {
 margin-top: 20px;
 }
 
-.square1 .stateButton, .square2 .stateButton{
+.myleague-square1 .myleague-stateButton, .myleague-square2 .myleague-stateButton{
   position: absolute;
   right: 22px;
   bottom: 19px;
