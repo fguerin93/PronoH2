@@ -26,6 +26,15 @@ else if ($q == 'connexion')
     $controller = 'connexion';
 }
 
+else if ($q == 'deconnexion')
+{
+    $controller = 'deconnexion';
+}
+
+else if ($q == 'league')
+{
+    $controller = 'createLeague';
+}
 
 // else if (preg_match('/^delete\/[1-9][0-9]*$/', $q))
 // {
