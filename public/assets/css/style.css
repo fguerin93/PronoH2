@@ -132,32 +132,18 @@ header nav ul li .info{
     font-size:22px;
     margin-bottom:7%;
 }
-.home-container-connected .content button
-{
-    font-family:"amaranth", sans-serif;
-    text-decoration: none;
-    background:#3CB833;
-    padding:20px 70px 35px 70px;
-    color:white;
-    position: absolute;
-    top:95%;
-    margin-top:15px;
-    border-radius:5px;
-    font-size:18px;
-}
 
-.home-container-connected .illustration
+.home-container-connected .content .league-container
 {
-    position: absolute;
-    top:25%;
-    width:50%;
-    margin-left:50%;
+    width: 440px;
+    margin-left: 163px;
+    display:flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-.home-container-connected .illustration img
-{
-    padding-left:10%;
-    width:90%;
-}
+  
+
 
 /************
     footer

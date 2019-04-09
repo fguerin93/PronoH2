@@ -4,10 +4,15 @@
         <div class="content">
             <h1>Pronos entre amis</h1>
             <p>Tu peux créer ta propre ligue ou rejoindre la ligue de tes amis/collègue</p>
-            <button class="nouveauCompte" type="button">Je crée mon compte</button>
-        </div>
-        <div class="illustration">
-            <img src="<?=URL?>assets/images/img-1.svg" alt="foot">
+            <div class="league-container">
+                <div class="league">
+                    <div class="league-logo">
+                        <img src="" alt="écusson PSG">
+                        <h2 class="league-name">Hétic Football</h2>
+                    </div>
+                    <button class="stateButton "type="button" name="button">En cours</button>
+                </div>
+            </div>
         </div>
     </div>
 
