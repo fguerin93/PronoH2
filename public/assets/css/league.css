@@ -4,9 +4,30 @@
     height: 100%;
     margin-left:10%;
 }
+.new-league-container .content
+{
+    position: absolute;
+    top:15%;
+    width:50%;
+}
+.new-league-container .content h1{
+    width:400px;
+    margin-bottom:30px;
+    line-height:71px;
+    font-size:58px;
+    font-family: 'Amaranth', sans-serif;
+    font-weight: bold;
+}
 .new-league-container form{
     margin-top:8%;
 }
+
+.new-league-container p{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 36px;
+    font-size:22px;
+}
+
 .new-league-container form label{
     position: absolute;
     margin-left:5%;
@@ -14,7 +35,6 @@
     font-size: 16px;
     background:white;
     padding: 1%;
-
 }
 .new-league-container form input{
     width:325px;
@@ -34,9 +54,6 @@
     border-radius: 5px;
     font-family: 'Titillium Web', sans-serif;
 }
-.new-league-container .content h1{
-    margin-bottom:20px;
-}
 .new-league-container .content button{
     position: absolute;
     margin-top:15px;
@@ -47,4 +64,21 @@
     color:white;
     border-radius:5px;
     font-size:18px;
+}
+
+/************
+    illustration
+*************/
+.new-league-container .illustration
+{
+    position: absolute;
+    top:25%;
+    width:50%;
+    margin-left:50%;
+}
+
+.new-league-container .illustration img
+{
+    padding-left:10%;
+    width:90%;
 }
