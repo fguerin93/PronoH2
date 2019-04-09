@@ -42,14 +42,16 @@ header nav ul li .info{
     margin-left:70%;
 }
 /*******************
-    login on click
+    LOGIN
 ********************/
-.container-login{
+/*******************
+    connexion 
+********************/
+.container-connexion{
     position: absolute;
     left:70%;
     width:25%;
     height: 45%;
-    align-content: flex-end;
     z-index:1;
     display:none;
 
@@ -100,7 +102,40 @@ header nav ul li .info{
     border-radius:5px;
     font-size:18px;
 }
+/*******************
+    deconnexion
+********************/
 
+.container-deconnexion{
+    position: absolute;
+    left:70%;
+    width:25%;
+    height: 35%;
+    z-index:1;
+    display:block;
+}
+.container-deconnexion .title{
+
+    margin-left:2%;
+    margin-right:5%;
+    font-family:"amaranth", sans-serif;
+    font-size: 16px;
+}
+.container-deconnexion p{
+    font-family: 'Titillium Web', sans-serif;
+}
+.container-deconnexion .button-deconnected
+{
+    width:240px;
+    margin-top:10%;
+    padding:20px 50px 35px 50px;
+    font-family:"amaranth", sans-serif;
+    text-decoration: none;
+    background:#B83333;
+    color:white;
+    border-radius:5px;
+    font-size:18px;
+}
 /************
     body
 *************/

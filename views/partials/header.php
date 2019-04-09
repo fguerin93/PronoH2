@@ -23,7 +23,7 @@
             </ul>
         </nav>
     </header>
-    <div class="container-login">
+    <div class="container-connexion">
         <div class="login">
             <form method="POST" action="">
              <div>
@@ -38,4 +38,18 @@
           </form>
      </div>
     </div>
-    
+    <div class="container-deconnexion">
+        <div class="login">
+            <form method="POST" action="">
+             <div>
+                <p class="title">Pseudo</p>
+                <p>Sam</p>
+             </div>
+             <div>
+                <p class="title">Email</p>
+                <p>Sam@gmail.com</p>  
+             </div> 
+             <button type="submit" class="button-deconnected">Deconnexion</button>
+          </form>
+     </div>
+    </div>
