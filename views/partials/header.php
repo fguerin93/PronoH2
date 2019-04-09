@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?=URL?>assets/css/style.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/reset.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/league.css">
+    <link rel="stylesheet" href="<?=URL?>assets/css/myLeagues.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +20,37 @@
                 <li><a href=""> Mes ligues</a></li>
                 <li><a href=""> Mes pronos</a></li>
                 <li><a href=""><img src="<?=URL?>assets/images/icon-1.png" alt=""  class="info"></a></li>
-                <li><a href="<?=URL?>deconnexion"><img src="<?=URL?>assets/images/icon-2.png" alt=""></a></li>
+                <li><img src="<?=URL?>assets/images/icon-2.png" alt="" class="icon-connexion"></li>
             </ul>
         </nav>
     </header>
+    <div class="container-connexion">
+        <div class="login">
+            <form method="POST" action="">
+             <div>
+                    <label for="login">Pseudo</label><br>
+                 <input type="text" name="" placeholder="Sam" />
+             </div>
+             <div>
+                 <label for="password">Mot de passe</label><br>
+                 <input type="password" name="" placeholder="2UB763" />
+             </div> 
+             <button type="submit">Connexion</button>
+          </form>
+     </div>
+    </div>
+    <div class="container-deconnexion">
+        <div class="login">
+            <form method="POST" action="">
+             <div>
+                <p class="title">Pseudo</p>
+                <p>Sam</p>
+             </div>
+             <div>
+                <p class="title">Email</p>
+                <p>Sam@gmail.com</p>  
+             </div> 
+             <button type="submit" class="button-deconnected">Deconnexion</button>
+          </form>
+     </div>
+    </div>
