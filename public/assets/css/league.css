@@ -1,7 +1,7 @@
 .new-league-container{
     position: absolute;
     width:80%;
-    height: 80%;
+    height: 100%;
     margin-left:10%;
 }
 .new-league-container form{
@@ -9,9 +9,9 @@
 }
 .new-league-container form label{
     position: absolute;
+    margin-left:5%;
     font-family:"amaranth", sans-serif;
     font-size: 16px;
-    margin-left:5%;
     background:white;
     padding: 1%;
 
@@ -38,17 +38,13 @@
     margin-bottom:20px;
 }
 .new-league-container .content button{
+    position: absolute;
+    margin-top:15px;
+    padding:20px 70px 35px 70px;
     font-family:"amaranth", sans-serif;
     text-decoration: none;
     background:#3CB833;
-    padding:20px 70px 35px 70px;
     color:white;
-    position: absolute;
-    margin-top:15px;
     border-radius:5px;
     font-size:18px;
-}
-
-footer{
-    margin-top:5%;
 }

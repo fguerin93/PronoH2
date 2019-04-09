@@ -47,7 +47,7 @@ header nav ul li .info{
 .container{
     position: absolute;
     width:80%;
-    height: 80%;
+    height: 100%;
     margin-left:10%;
 }
 .content{
@@ -67,16 +67,19 @@ header nav ul li .info{
     font-family: 'Titillium Web', sans-serif;
     line-height: 36px;
     font-size:22px;
+    margin-bottom:7%;
 }
-.content a{
-    font-family: 'Titillium Web', sans-serif;
+.content button{
+    font-family:"amaranth", sans-serif;
     text-decoration: none;
     background:#3CB833;
-    padding: 20px 50px;
+    padding:20px 70px 35px 70px;
     color:white;
     position: absolute;
-    margin-top:50px;
+    top:95%;
+    margin-top:15px;
     border-radius:5px;
+    font-size:18px;
 }
 
 .illustration{
@@ -90,10 +93,34 @@ header nav ul li .info{
     width:90%;
 }
 
+/************
+    footer
+*************/
 footer{
     position: absolute;
-    top:105%;
+    top:120%;
     width:100%;
-    height: 20%;
     background:#44538F;
+
+}
+footer .link{
+    display:flex;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+    padding:25px 20px;
+    color:white;
+    font-family:"amaranth", sans-serif;
+    font-weight: 200;
+}
+footer p{
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-family:"amaranth", sans-serif;
+    padding:10px 30px 25px 30px;
+}
+footer span{
+    color:#3CB833;
 }
