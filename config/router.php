@@ -16,6 +16,11 @@ else if ($q == 'inscription')
     $controller = 'inscription';
 }
 
+else if ($q == 'league')
+{
+    $controller = 'createLeague';
+}
+  
 else if ($q == 'connexion')
 {
     $controller = 'connexion';
