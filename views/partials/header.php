@@ -18,7 +18,7 @@
                 <li><a href="<?=URL?>views/pages/createLeague.php"> Créer ma ligue</a></li>
                 <li><a href=""> Mes ligues</a></li>
                 <li><a href=""><img src="<?=URL?>assets/images/icon-1.png" alt=""></a></li>
-                <li><a href=""><img src="<?=URL?>assets/images/icon-2.png" alt=""></a></li>
+                <li><a href="<?=URL?>deconnexion"><img src="<?=URL?>assets/images/icon-2.png" alt=""></a></li>
             </ul>
         </nav>
     </header>
