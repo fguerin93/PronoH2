@@ -4,7 +4,6 @@ $title = 'Créer une ligue';
 
 include '../database/database.php';
 
-session_start();
 $idCreator = $_SESSION['id'];
 
 if(isset($_POST['formcreationleague'])) {

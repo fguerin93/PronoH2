@@ -2,8 +2,6 @@
 
 include '../database/database.php';
 
-session_start();
-
 if(isset($_POST['formconnexion'])) {
     $pseudoconnect = htmlspecialchars($_POST['pseudoconnect']);
     $passwordconnect = sha1($_POST['passwordconnect']);
