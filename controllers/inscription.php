@@ -41,4 +41,4 @@ if(isset($_POST['forminscription'])) {
         }
      }
 
-     include '../views/pages/inscription.php';
+    include '../views/pages/inscription.php';
