@@ -6,9 +6,16 @@ $q = !empty($_GET['q']) ? $_GET['q'] : 'home';
 
 $controller = '404';
 
+session_start();
+
 if($q == 'home')
 {
-    $controller = 'home';
+    if (empty($_SESSION))
+    {
+        $controller = 'home';
+    } else {
+        $controller = 'home2';
+    }
 }
 
 else if ($q == 'inscription')
