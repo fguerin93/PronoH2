@@ -8,8 +8,8 @@ include '../views/partials/header.php';
     <h2>Connexion</h2>
     <br /><br />
     <form method="POST" action="">
-    <input type="email" name="mailconnect" placeholder="Mail" />
-    <input type="password" name="mdpconnect" placeholder="Mot de passe" />
+    <input type="text" name="pseudoconnect" placeholder="pseudo" />
+    <input type="password" name="passwordconnect" placeholder="Mot de passe" />
     <br /><br />
     <input type="submit" name="formconnexion" value="Se connecter !" />
     </form>
