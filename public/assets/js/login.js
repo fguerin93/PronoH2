@@ -1,17 +1,38 @@
-let connexion = document.querySelector('.container-connexion')
-let iconOpen = document.querySelector('.icon-connexion')
+const connexion = document.querySelector('.container-connexion')
+const deconnexion = document.querySelector('.container-deconnexion')
+const iconOpen = document.querySelector('.icon-connexion')
+
+const connexionValue = document.querySelector('.hidden')
 
 let connexionIsOpen = false
+let deconnexionIsOpen = false
 
 iconOpen.addEventListener('click', () =>
 {
-    if(!connexionIsOpen) 
+    console.log(connexionValue.textContent)
+
+    if (connexionValue.textContent=='false')
     {
-        connexion.style.display = "block"
+        if(!connexionIsOpen) 
+        {
+            connexion.style.display = "block"
+        }
+        else 
+        {
+            connexion.style.display = "none"
+        }
+        connexionIsOpen = !connexionIsOpen
     }
-    else 
+    if (connexionValue.textContent=='true')
     {
-        connexion.style.display = "none"
+        if(!deconnexionIsOpen) 
+        {
+            deconnexion.style.display = "block"
+        }
+        else 
+        {
+            deconnexion.style.display = "none"
+        }
+        deconnexionIsOpen = !deconnexionIsOpen
     }
-    connexionIsOpen = !connexionIsOpen
 })

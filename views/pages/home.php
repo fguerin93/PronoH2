@@ -3,7 +3,7 @@
     <div class="home-container">
         <div class="content">
             <h1>Défis tes amis sur PEA</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit a augue sit amet porttitor. Mauris sit amet urna euismod, molestie eros sed, interdum lectus. Praesent sit amet tortor sollicitudin, eros malesuada tortor sit amet, porta sit amet a erat. </p>
+            <p>Envi de t’amuser et de défier tes amis/collègues sur les résultats sportifs de football ? Invite les sur ta ligue PEA et faites vos pronostics sur les matchs du week end ! Un classement déterminera lequel de vous est le roi des pronostics. Bonne chance ! </p>
             <a href="<?= URL ?>inscription"><button class="nouveauCompte" type="button">Je crée mon compte</button></a>
         </div>
         <div class="illustration">

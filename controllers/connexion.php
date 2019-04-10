@@ -14,16 +14,15 @@ if(isset($_POST['formconnexion'])) {
             $_SESSION['id'] = $userinfo->id;
             $_SESSION['pseudo'] = $userinfo->pseudo;
             $_SESSION['mail'] = $userinfo->mail;
-            header("Location: home");
-         
+            header('location: home');
         } else {
             $erreur = "Mauvais pseudo ou mot de passe !";
+            echo "<script>alert(\"Mauvais pseudo ou mot de passe ! \")</script>";
         }
     } else {
         $erreur = "Tous les champs doivent être complétés !";
+        echo "<script>alert(\"Tous les champs doivent être complétés ! \")</script>";
     }
 }
 
-var_dump($_SESSION);
-
-include '../views/pages/connexion.php';
+include '../controllers/verifyConnexion.php';
