@@ -21,7 +21,7 @@
                 <a href="<?=URL?>home"><img src="<?=URL?>assets/images/logo.svg" alt="logo" class="logo"></a>
             </div>
             <ul>
-                <li><a href="<?=URL?>myLeagues"> Mes ligues</a></li>
+                <li><a href="<?=URL?>myleagues"> Mes ligues</a></li>
                 <li><a href=""><img src="<?=URL?>assets/images/icon-1.png" alt=""  class="info"></a></li>
                 <li><img src="<?=URL?>assets/images/icon-2.png" alt="" class="icon-connexion"></li>
             </ul>

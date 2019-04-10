@@ -1,4 +1,6 @@
 <?php include '../views/partials/header.php'; ?>
+
+
 <div class="myleague-principal">
   <div class="myleague-content">
     <h1>Mes ligues</h1>
@@ -71,3 +73,6 @@
   </div>
 </div>
 </div>
+
+
+<?php include '../views/partials/footer.php'; ?>
