@@ -4,6 +4,7 @@ include '../controllers/requestApi.php';
 
 $comp = 'PL';
 
+// change matchs when select other leagues
 if (isset($_POST['comp']))
 {
     $chooseComp = $_POST['comp'];
@@ -20,8 +21,10 @@ if (isset($_POST['comp']))
         echo str_replace('T', ' ', $date);
         echo '<pre>';
     }
-
 }
+
+// select and choose match
+
 
 
 

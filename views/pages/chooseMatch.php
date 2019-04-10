@@ -16,7 +16,6 @@ include '../views/partials/header.php';
     </select>
 </form>
 
-
 <?php 
 include '../views/partials/footer.php';
 ?>
