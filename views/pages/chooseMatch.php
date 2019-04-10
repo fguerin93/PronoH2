@@ -9,7 +9,10 @@ include '../views/partials/header.php';
     <select name="comp" onchange="this.form.submit();">
         <option value="">--Trie tes ligues--</option>
         <option value="FL1">Ligue 1</option>
-        <option value="PL">Première ligue</option>
+        <option value="PL">Premier league</option>
+        <option value="BL1">Bundesliga</option>
+        <option value="SA">Série A italienne</option>
+        <option value="PD">liga espanol</option>
     </select>
 </form>
 
