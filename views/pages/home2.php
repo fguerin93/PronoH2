@@ -11,13 +11,13 @@
                 <div class="league-container">
                     <div class="league">
                         <h2 class="league-name">Créer une ligue</h2>
-                        <a class="stateButton">Créer</a>
+                        <a href="<?= URL ?>league" class="stateButton">Créer</a>
                     </div>
                     <div class="league">
-                        <form action="" methode="POST">
+                        <form action="" method="POST">
                             <h2>Rejoindre une ligue</h2><br>
                             <input type="text" name="code" placeholder="Rentre le code">
-                            <button type="submit" name="formcreationleague">OK</button>
+                            <button type="submit" name="formjoinleague">OK</button>
                         </form>
                     </div>
                 </div>

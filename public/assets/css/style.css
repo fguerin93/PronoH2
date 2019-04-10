@@ -55,8 +55,13 @@ header nav ul li img
 }
 
 header nav ul li .info
- {
+{
   margin-left: 70%;
+}
+
+header .icon-connexion:hover
+{
+  cursor: pointer;
 }
 
 /*******************
@@ -132,6 +137,11 @@ header nav ul li .info
   font-size: 18px;
 }
 
+.login button:hover
+{
+  cursor: pointer;
+}
+
 /*******************
     deconnexion
 ********************/
@@ -170,6 +180,11 @@ header nav ul li .info
   color: white;
   border-radius: 5px;
   font-size: 18px;
+}
+
+.container-deconnexion .button-deconnected:hover
+{
+  cursor: pointer;
 }
 
 /************
@@ -353,6 +368,7 @@ header nav ul li .info
   display:flex;
   justify-content: center;
   align-items:center;
+  text-decoration: none;
 }
 
 .home-container-connected .content .league-container .league button 
