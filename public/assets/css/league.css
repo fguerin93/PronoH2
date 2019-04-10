@@ -1,15 +1,14 @@
 .new-league-container
 {
-  position: absolute;
   width: 80%;
   height: 100%;
+  margin-top: 8%;
   margin-left: 10%;
+  display:flex;
 }
 
 .new-league-container .content
 {
-  position: absolute;
-  top: 15%;
   width: 50%;
 }
 
@@ -88,10 +87,8 @@
 
 .new-league-container .illustration
 {
-  position: absolute;
-  top: 25%;
   width: 50%;
-  margin-left: 50%;
+  margin-top:8%;
 }
 
 .new-league-container .illustration img
