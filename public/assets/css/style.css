@@ -10,8 +10,9 @@ header {
 
 header nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-right: 5%;
+  margin-left: 5%;
 }
 header nav .logo-nav{
     display:flex;
