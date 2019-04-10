@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="<?=URL?>assets/css/league.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/myLeagues.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/inscription.css">
+    <link rel="stylesheet" href="<?=URL?>assets/css/chooseMatch.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 </head>
 <body>
