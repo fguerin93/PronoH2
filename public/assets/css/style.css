@@ -15,17 +15,13 @@ header nav
     justify-content: flex-end;
     margin-right:5%;
 }
-
-header nav .title-nav
+header nav .logo-nav{
+    display:flex;
+}
+header nav .logo
 {
-    position: absolute;
-    left:5%;
-    text-decoration: none;
-    color:white;
-    font-family:"amaranth", sans-serif;
-    font-size:20px;
-    text-transform: uppercase;
-    padding-top:21px;
+    width:25%;
+    height: 100%;
 }
 
 header nav ul

@@ -9,5 +9,6 @@
             <p>Copyright 2019<span>©PronoEntreAmi</span></p>
         </footer>
         <script src="<?=URL?>assets/js/login.js"></script>
+        <script src="<?=URL?>assets/js/chooseMatch.js"></script>
     </body>
 </html>

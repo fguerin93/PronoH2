@@ -115,7 +115,7 @@
   cursor: pointer;
 }
 
-.container-matchs .content-matchs .match-to-select.isActive
+.container-matchs .content-matchs .match-to-select.active
 {
   background:#3CB833;
 }
