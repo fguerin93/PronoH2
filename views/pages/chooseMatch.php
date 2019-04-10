@@ -19,13 +19,17 @@ include '../views/partials/header.php';
 <h2>Clique sur le match pour le sélectionner</h2>
 
 <?php for ($i = 0; $i < 20; $i++) { ?>  
-    <div>
+    <div class="match-to-select" data-id="<?= $matches->matches[$i]->id ?>">
         <p><?= $matches->matches[$i]->homeTeam->name ?></p>
         <p>VS</p>
         <p><?= $matches->matches[$i]->awayTeam->name ?></p>
         <p><?= $matches->matches[$i]->utcDate ?></p>
     </div>
 <?php } ?>
+<form action="" method="POST">
+    <input class="input-match-selected" name="idString" type="hidden" value="">
+    <button type="submit" name="formaddmatch">Créée ta ligue</button>
+</form>
 
 <?php 
 include '../views/partials/footer.php';
