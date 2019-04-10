@@ -19,9 +19,10 @@ if(isset($_POST['formcreationleague'])) {
             $nameExist = $reqname->rowCount();
             if ($nameExist == 0)
             {
-                $insertmbr = $pdo->prepare("INSERT INTO league(name, id_creator, code, message) VALUES(?, ?, ?, ?)");
+                $insertmbr = $pdo->prepare("INSERT INTO leagues(name, id_creator, code, message) VALUES(?, ?, ?, ?)");
                 $insertmbr->execute(array($name, $idCreator, $code, $text));
                 $erreur = "Votre ligue a bien été créée";
+                echo "<script>alert(\"Votre ligue a bien été créée \")</script>";
                 header('location: matchs');
             } else {
                 $erreur = "Le nom de la ligue existe déjà";

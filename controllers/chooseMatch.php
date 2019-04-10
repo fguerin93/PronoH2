@@ -44,9 +44,6 @@ if(isset($_POST['formaddmatch']))
         $idleaguequery = $pdo->query('SELECT id FROM leagues ORDER BY id DESC LIMIT 1');
         $id_league = $idleaguequery->fetch();
         $id_league = $id_league->id;
-        echo '<pre>';
-        print_r($id_league);
-        echo '</pre>';
 
         $insertleaguematches = $pdo->prepare('INSERT INTO league_matches(id_league, id_match) VALUES (:id_league, :id_match)');
 
@@ -54,7 +51,7 @@ if(isset($_POST['formaddmatch']))
         $insertleaguematches->bindValue('id_match', $id_matches);
         $insertleaguematches->execute();
     }
-    // header('location: home');
+    header('location: home');
 
 }
 

@@ -72,8 +72,8 @@
 
 .new-league-container .content button
 {
-  position: absolute;
   margin-top: 15px;
+  margin-bottom: 100px;
   padding: 20px 70px 35px 70px;
   font-family: "amaranth", sans-serif;
   text-decoration: none;
