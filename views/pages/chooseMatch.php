@@ -3,7 +3,7 @@ include '../views/partials/header.php';
 ?>
 
 <h1>Choisis tes matchs</h1>
-<div class="selected-match">
+<form class="selected-match" method="POST">
     <label for="choose-match">Choisi tes matchs:</label>
 
     <select name="comp" onchange="this.form.submit();">
@@ -11,7 +11,7 @@ include '../views/partials/header.php';
         <option value="FL1">Ligue 1</option>
         <option value="PL">Première ligue</option>
     </select>
-</div>
+</form>
 
 
 <?php 
