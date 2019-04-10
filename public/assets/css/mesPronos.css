@@ -1,0 +1,137 @@
+/** global css **/
+
+p {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "amaranth", sans-serif;
+}
+
+label {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/** Text  content **/
+
+.myPronos-principal .myPronos-content {
+  display: flex;
+  position: relative;
+}
+
+.myPronos-principal .myPronos-content h1 {
+  margin-left: 190px;
+  position: absolute;
+  top: 80px;
+  font-size: 70px;
+}
+
+.myPronos-principal .myPronos-content .myPronos-ranking {
+  position: absolute;
+  top: 295px;
+  left: 230px;
+}
+
+.myPronos-principal .myPronos-content .myPronos-code {
+  display: inline-flex;
+  margin-top: 15px;
+  position: absolute;
+  top: 295px;
+  left: 1067px;
+}
+
+/** Square css **/
+
+.myPronos-globalSqares {
+  margin-top: 340px;
+}
+
+.myPronos-sqare {
+  background: #44538F;
+  color: #ffffff;
+  width: 1060px;
+  height: 165px;
+  display: flex;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+.myPronos-sqarebis {
+  background: #6378CC;
+  color: #ffffff;
+  width: 1060px;
+  height: 165px;
+  display: flex;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+/** Logo league **/
+
+.myPronos-sqare .myPronos-leagueLogo, .myPronos-sqarebis .myPronos-leagueLogo {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.myPronos-sqare .myPronos-leagueLogo img {
+  width: 45px;
+  height: 45px;
+}
+
+/** date match **/
+
+.myPronos-sqare .myPronos-date {
+  align-self: center;
+  margin-left: 95px;
+}
+
+/** Input design **/
+
+.myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos .myPronos-pronoLabel {
+  align-self: center;
+}
+
+.myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos .myPronos-pronoLabel .myPronos-inputScore {
+  display: flex;
+  margin: 0 50px;
+  margin-top: 10px;
+}
+
+.myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos .myPronos-pronoLabel .myPronos-inputScore input {
+  background-color: #ffffff;
+  color: black;
+  padding: 0px 5px;
+}
+
+.myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos .myPronos-pronoLabel .myPronos-inputScore p {
+  font-size: 36px;
+}
+
+/** score global **/
+
+.myPronos-sqare .myPronos-globalscore {
+  display: flex;
+  flex-direction: row;
+  margin-left: 80px;
+}
+
+.myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos {
+  margin-top: 30px;
+}
+
+.myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos, .myPronos-realInfos {
+  text-align: center;
+  align-self: center;
+}
+
+.myPronos-sqare .myPronos-globalscore .myPronos-realInfos {
+  margin-left: 110px;
+}
+
+/** team infos **/
+
+.myPronos-sqare .myPronos-team {
+  display: flex;
+  align-self: center;
+  margin-left: 120px;
+}
