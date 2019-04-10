@@ -2,370 +2,325 @@
     nav
 *************/
 
-header
-{
-    width:100%;
-    height: 62px;
-    background:#44538F;
+header {
+  width: 100%;
+  height: 62px;
+  background: #44538F;
 }
 
-header nav
-{
-    display : flex;
-    justify-content: flex-end;
-    margin-right:5%;
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
 }
 
-header nav .title-nav
-{
-    position: absolute;
-    left:5%;
-    text-decoration: none;
-    color:white;
-    font-family:"amaranth", sans-serif;
-    font-size:20px;
-    text-transform: uppercase;
-    padding-top:21px;
+header nav .title-nav {
+  position: absolute;
+  left: 5%;
+  text-decoration: none;
+  color: white;
+  font-family: "amaranth", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-top: 21px;
 }
 
-header nav ul
-{
-    display: flex;
-    flex-direction: row;
+header nav ul {
+  display: flex;
+  flex-direction: row;
 }
 
-header nav ul li
-{
-    color:white;
-    font-family:"amaranth", sans-serif;
-    font-size:20px;
-    padding-top:21px;
-    padding-left:70px;
+header nav ul li {
+  color: white;
+  font-family: "amaranth", sans-serif;
+  font-size: 20px;
+  padding-top: 21px;
+  padding-left: 70px;
 }
 
-header nav ul li a
-{
-    text-decoration: none;
+header nav ul li a {
+  text-decoration: none;
 }
 
-header nav ul li img
-{
-    width:80%;
+header nav ul li img {
+  width: 80%;
 }
 
-header nav ul li .info
-{
-    margin-left:70%;
+header nav ul li .info {
+  margin-left: 70%;
 }
 
 /*******************
     LOGIN
 ********************/
+
 /*******************
-    connexion 
+    connexion
 ********************/
 
-.container-connexion
-{
-    position: absolute;
-    left:70%;
-    width:25%;
-    height: 45%;
-    z-index:1;
-    display:none;
+.container-connexion {
+  position: absolute;
+  left: 70%;
+  width: 25%;
+  height: 45%;
+  z-index: 1;
+  display: none;
 }
 
-.login
-{
-    width:100%;
-    height: 100%;
-    margin-top:5%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border:1px solid #333333;
-    border-radius: 5px;
-    background:white;
+.login {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  background: white;
 }
 
-.login div
-{
-    display:flex;
-    margin-top:12%;
+.login div {
+  display: flex;
+  margin-top: 12%;
 }
 
-.login label
-{
-    position: absolute;
-    margin-left:2%;
-    padding:0% 1%;
-    margin-top:-2%;
-    font-family:"amaranth", sans-serif;
-    font-size: 16px;
-    background:white;
+.login label {
+  position: absolute;
+  margin-left: 2%;
+  padding: 0% 1%;
+  margin-top: -2%;
+  font-family: "amaranth", sans-serif;
+  font-size: 16px;
+  background: white;
 }
 
-.login input
-{
-    width:240px;
-    padding:10% 5%;
-    border:1px solid #5D5D5D;
-    border-radius: 5px;
-    font-family: 'Titillium Web', sans-serif;
-    display:flex;
-    justify-content: center;
+.login input {
+  width: 240px;
+  padding: 10% 5%;
+  border: 1px solid #5D5D5D;
+  border-radius: 5px;
+  font-family: 'Titillium Web', sans-serif;
+  display: flex;
+  justify-content: center;
 }
 
-.login button
-{
-    width:240px;
-    margin-top:10%;
-    padding:20px 50px 35px 50px;
-    font-family:"amaranth", sans-serif;
-    text-decoration: none;
-    background:#3CB833;
-    color:white;
-    border-radius:5px;
-    font-size:18px;
+.login button {
+  width: 240px;
+  margin-top: 10%;
+  padding: 20px 50px 35px 50px;
+  font-family: "amaranth", sans-serif;
+  text-decoration: none;
+  background: #3CB833;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
 /*******************
     deconnexion
 ********************/
 
-.container-deconnexion
-{
-    position: absolute;
-    left:70%;
-    width:25%;
-    height: 35%;
-    z-index:1;
-    display:none;
+.container-deconnexion {
+  position: absolute;
+  left: 70%;
+  width: 25%;
+  height: 35%;
+  z-index: 1;
+  display: none;
 }
 
-.container-deconnexion .title
-{
-
-    margin-left:2%;
-    margin-right:5%;
-    font-family:"amaranth", sans-serif;
-    font-size: 16px;
+.container-deconnexion .title {
+  margin-left: 2%;
+  margin-right: 5%;
+  font-family: "amaranth", sans-serif;
+  font-size: 16px;
 }
 
-.container-deconnexion p
-{
-    font-family: 'Titillium Web', sans-serif;
+.container-deconnexion p {
+  font-family: 'Titillium Web', sans-serif;
 }
 
-.container-deconnexion .button-deconnected
-{
-    width:240px;
-    margin-top:10%;
-    padding:20px 50px 35px 50px;
-    font-family:"amaranth", sans-serif;
-    text-decoration: none;
-    background:#B83333;
-    color:white;
-    border-radius:5px;
-    font-size:18px;
+.container-deconnexion .button-deconnected {
+  width: 240px;
+  margin-top: 10%;
+  padding: 20px 50px 35px 50px;
+  font-family: "amaranth", sans-serif;
+  text-decoration: none;
+  background: #B83333;
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
 }
-
 
 /************
     body
 *************/
 
-.home-container
-{
-    position: absolute;
-    width:80%;
-    height: 100%;
-    margin-left:10%;
+.home-container {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
 }
 
-.home-container .content
-{
-    position: absolute;
-    top:15%;
-    width:50%;
+.home-container .content {
+  position: absolute;
+  top: 15%;
+  width: 50%;
 }
 
-.home-container .content h1
-{
-    width:400px;
-    margin-bottom:50px;
-    line-height:71px;
-    font-size:58px;
-    font-family: 'Amaranth', sans-serif;
-    font-weight: bold;
+.home-container .content h1 {
+  width: 400px;
+  margin-bottom: 50px;
+  line-height: 71px;
+  font-size: 58px;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: bold;
 }
 
-.home-container .content p
-{
-    font-family: 'Titillium Web', sans-serif;
-    line-height: 36px;
-    font-size:22px;
-    margin-bottom:7%;
+.home-container .content p {
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 36px;
+  font-size: 22px;
+  margin-bottom: 7%;
 }
 
-.home-container .content button
-{
-    font-family:"amaranth", sans-serif;
-    text-decoration: none;
-    background:#3CB833;
-    padding:20px 70px 35px 70px;
-    color:white;
-    position: absolute;
-    top:95%;
-    margin-top:15px;
-    border-radius:5px;
-    font-size:18px;
+.home-container .content button {
+  font-family: "amaranth", sans-serif;
+  text-decoration: none;
+  background: #3CB833;
+  padding: 20px 70px 35px 70px;
+  color: white;
+  position: absolute;
+  top: 95%;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 18px;
 }
 
-.home-container .illustration
-{
-    position: absolute;
-    top:25%;
-    width:50%;
-    margin-left:50%;
+.home-container .illustration {
+  position: absolute;
+  top: 25%;
+  width: 50%;
+  margin-left: 50%;
 }
 
-.home-container .illustration img
-{
-    padding-left:10%;
-    width:90%;
+.home-container .illustration img {
+  padding-left: 10%;
+  width: 90%;
 }
-
 
 /************
     body home when connected
 *************/
 
-
-.home-container-connected
-{
-    position: absolute;
-    width:80%;
-    height: 100%;
-    margin-left:10%;
+.home-container-connected {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
 }
 
-.home-container-connected .content
-{
-    position: absolute;
-    top:15%;
-    width:50%;
+.home-container-connected .content {
+  position: absolute;
+  top: 15%;
+  width: 50%;
 }
 
-.home-container-connected .content h1
-{
-    width:400px;
-    font-size:58px;
-    font-family: 'Amaranth', sans-serif;
-    font-weight: bold;
-    margin-bottom:50px;
-    line-height:71px;
+.home-container-connected .content h1 {
+  width: 400px;
+  font-size: 58px;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+  line-height: 71px;
 }
 
-.home-container-connected .content p
-{
-    font-family: 'Titillium Web', sans-serif;
-    line-height: 36px;
-    font-size:22px;
-    margin-bottom:7%;
+.home-container-connected .content p {
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 36px;
+  font-size: 22px;
+  margin-bottom: 7%;
 }
 
-.home-container-connected .content .league-container
-{
-    width: 440px;
-    display:flex;
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: space-between;
+.home-container-connected .content .league-container {
+  width: 440px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.home-container-connected .content .league-container .league
-{
-    position: relative;
-    font-family:"amaranth", sans-serif;
-    background-color: #44538F;
-    color: #ffffff;
-    width: 430px;
-    height: 90px;
-    border-radius: 5px;
-    margin-bottom: 45px;
-    display:flex;
-    align-items: center;
+.home-container-connected .content .league-container .league {
+  position: relative;
+  font-family: "amaranth", sans-serif;
+  background-color: #44538F;
+  color: #ffffff;
+  width: 430px;
+  height: 90px;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  display: flex;
+  align-items: center;
 }
 
-.home-container-connected .content .league-container .league h2
-{
-    position: absolute;
-    font-size: 25px;
-    left: 22px;
+.home-container-connected .content .league-container .league h2 {
+  position: absolute;
+  font-size: 25px;
+  left: 22px;
 }
 
-.home-container-connected .content .league-container .league button
-{
-    position: absolute;
-    right: 22px;
-    bottom: 19px;
-    font-family:"amaranth", sans-serif;
-    font-size: 20px;
-    width: 142px;
-    height: 52px;
-    background-color: #3CB833;
-    border-radius: 26px;
-    border: none;
-    color: #ffffff;
+.home-container-connected .content .league-container .league button {
+  position: absolute;
+  right: 22px;
+  bottom: 19px;
+  font-family: "amaranth", sans-serif;
+  font-size: 20px;
+  width: 142px;
+  height: 52px;
+  background-color: #3CB833;
+  border-radius: 26px;
+  border: none;
+  color: #ffffff;
 }
-  
-
 
 /************
     footer
 *************/
 
-
-footer
-{
-    position: absolute;
-    top:120%;
-    width:100%;
-    background:#44538F;
+footer {
+  position: absolute;
+  top: 120%;
+  width: 100%;
+  background: #44538F;
 }
 
-footer .link
-{
-    display:flex;
-    justify-content: center;
+footer .link {
+  display: flex;
+  justify-content: center;
 }
 
-footer a 
-{
-    text-decoration: none;
-    padding:25px 20px;
-    color:white;
-    font-family:"amaranth", sans-serif;
-    font-weight: 200;
+footer a {
+  text-decoration: none;
+  padding: 25px 20px;
+  color: white;
+  font-family: "amaranth", sans-serif;
+  font-weight: 200;
 }
 
-footer p
-{
-    display:flex;
-    justify-content: center;
-    color: white;
-    font-family:"amaranth", sans-serif;
-    padding:10px 30px 25px 30px;
+footer p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "amaranth", sans-serif;
+  padding: 10px 30px 25px 30px;
 }
 
-footer span
-{
-    color:#3CB833;
+footer span {
+  color: #3CB833;
 }
 
-.hidden
-{
-    display: none;
+.hidden {
+  display: none;
 }
