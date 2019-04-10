@@ -3,11 +3,10 @@
 ***************************/
 .container-matchs
 {
-  position: absolute;
-  top:25%;
   width:80%;
   height: 100%;
   margin-left:10%;
+  margin-top: 8%;
 }
 
 .container-matchs h1
