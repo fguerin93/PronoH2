@@ -17,7 +17,6 @@ function apiRequestByComp($comp)
 function apiRequestByMatch($idMatch)
 {
     $uri = 'http://api.football-data.org/v2/matches/'.$idMatch;
-    var_dump($uri);
     $reqPrefs['http']['method'] = 'GET';
     $reqPrefs['http']['header'] = 'X-Auth-Token: 69d559cf22ed4ee4a8a94dc353db2b1c';
     $stream_context = stream_context_create($reqPrefs);

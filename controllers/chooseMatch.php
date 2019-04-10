@@ -25,10 +25,6 @@ if(isset($_POST['formaddmatch']))
         array_push($matchesArray,$match);
     }
 
-    echo '<pre>';
-    print_r($matchesArray);
-    echo '</pre>';
-
     foreach ($matchesArray as $i => $matches)
     {
         $id_matches = $matchesArray[$i]->match->id;
@@ -43,7 +39,22 @@ if(isset($_POST['formaddmatch']))
         $insertmatches->bindValue('away_team', $away_team);
         $insertmatches->bindValue('date', $date);
         $insertmatches->execute();
+
+        //request for max id league
+        $idleaguequery = $pdo->query('SELECT id FROM leagues ORDER BY id DESC LIMIT 1');
+        $id_league = $idleaguequery->fetch();
+        $id_league = $id_league->id;
+        echo '<pre>';
+        print_r($id_league);
+        echo '</pre>';
+
+        $insertleaguematches = $pdo->prepare('INSERT INTO league_matches(id_league, id_match) VALUES (:id_league, :id_match)');
+
+        $insertleaguematches->bindValue('id_league', $id_league);
+        $insertleaguematches->bindValue('id_match', $id_matches);
+        $insertleaguematches->execute();
     }
+    // header('location: home');
 
 }
 
