@@ -202,10 +202,10 @@ header nav ul li .info
 
 .home-container .content p 
 {
+  margin-bottom: 7%;
   font-family: 'Titillium Web', sans-serif;
   line-height: 36px;
   font-size: 22px;
-  margin-bottom: 7%;
 }
 
 .home-container .content button 
@@ -242,63 +242,78 @@ header nav ul li .info
   height: 100%;
   margin-top: 8%;
   margin-left: 10%;
+}
+
+.home-container-connected .column{
   display:flex;
-  border:1px solid red;
+  justify-content: center;
 }
 
 .home-container-connected .content 
 {
-  width: 50%;
-  border:3px solid orange;
+  width:100%;
+  margin-bottom:8%;
 }
 
 .home-container-connected .content h1
  {
   width: 400px;
+  margin-bottom: 50px;
   font-size: 58px;
   font-family: 'Amaranth', sans-serif;
   font-weight: bold;
-  margin-bottom: 50px;
   line-height: 71px;
 }
 
 .home-container-connected .content p 
 {
+  margin-bottom: 7%;
   font-family: 'Titillium Web', sans-serif;
   line-height: 36px;
   font-size: 22px;
-  margin-bottom: 7%;
+}
+
+.home-container-connected .content .home-container-connected-illustration
+{
+  width:50%;
+}
+
+.home-container-connected .content .home-container-connected-illustration img
+{
+  width:80%;
 }
 
 .home-container-connected .content .league-container
  {
-  width: 440px;
+  width: 50%;
   display: flex;
+  align-content:center;
   flex-flow: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  border:3px solid blue;
 }
 
 .home-container-connected .content .league-container .league
  {
   position: relative;
+  width: 90%;
+  height: 160px;
+  margin-left:10%;
+  margin-bottom: 45px;
+  border-radius: 5px;
   font-family: "amaranth", sans-serif;
   background-color: #44538F;
   color: #ffffff;
-  width: 430px;
-  height: 145px;
-  border-radius: 5px;
-  margin-bottom: 45px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .home-container-connected .content .league-container .league h2
  {
-  position: absolute;
   font-size: 25px;
-  left: 22px;
+  margin-bottom:2%;
+  display:flex;
+  justify-content: center;
 }
 
 .home-container-connected .content .league-container .league label
@@ -310,20 +325,35 @@ header nav ul li .info
 .home-container-connected .content .league-container .league input
  {
   width:350px;
-  height: 52px;
+  height: 70px;
   border:1px solid #979797;
-  border-radius:26px;
+  border-radius:70px;
   font-family: "amaranth", sans-serif;
   font-size: 20px;
   padding-left:15%;
 
 }
 
+.home-container-connected .content .league-container .league a
+{
+  width: 142px;
+  height: 52px;
+  border-radius: 26px;
+  margin-top:3%;
+  font-family: "amaranth", sans-serif;
+  font-size: 20px;
+  background-color: #3CB833;
+  color: #ffffff;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
 .home-container-connected .content .league-container .league button 
 {
   position: absolute;
-  right: 22px;
-  bottom: 19px;
+  top:49%;
+  left:55%;
   font-family: "amaranth", sans-serif;
   font-size: 20px;
   width: 142px;
