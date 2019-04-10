@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?=URL?>assets/css/myLeagues.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/inscription.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/chooseMatch.css">
-    <link rel="stylesheet" href="<?=URL?>css/mesPronos.css">
+    <link rel="stylesheet" href="<?=URL?>assets/css/mesPronos.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 </head>
 <body>
