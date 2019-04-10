@@ -4,7 +4,7 @@
 <div class="myleague-principal">
   <div class="myleague-content">
     <h1>Mes ligues</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <p>Retrouve l’ensemble de tes ligues ici. Montre à tes amis/collègues qui est le roi des pronos ! </p>
   </div>
 <div class="myleague-globalSquares">
 

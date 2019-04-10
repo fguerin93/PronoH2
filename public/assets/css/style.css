@@ -20,6 +20,7 @@ header nav
 header nav .logo-nav
 {
     display:flex;
+    cursor: pointer;
 }
 
 
@@ -52,6 +53,7 @@ header nav ul li a
 header nav ul li img 
 {
   width: 80%;
+  cursor: pointer;
 }
 
 header nav ul li .info
@@ -130,6 +132,7 @@ header nav ul li .info
   color: white;
   border-radius: 5px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 /*******************
@@ -170,6 +173,7 @@ header nav ul li .info
   color: white;
   border-radius: 5px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 /************
@@ -348,6 +352,7 @@ header nav ul li .info
   margin-top:3%;
   font-family: "amaranth", sans-serif;
   font-size: 20px;
+  cursor: pointer;
   background-color: #3CB833;
   color: #ffffff;
   display:flex;
@@ -374,6 +379,35 @@ header nav ul li .info
 {
   cursor: pointer;
 }
+
+
+/************
+    404
+*************/
+.container-404
+{
+  margin-top:5%;
+}
+.container-404, .container-404-message
+{
+  width:100%;
+  font-family: 'Titillium Web', sans-serif;
+  color: #44538F;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container-404 img
+{
+  width:50%;
+  height: 50%;
+  display:flex;
+  justify-content: center;
+}
+
+
+
 
 /************
     footer

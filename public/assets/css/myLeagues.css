@@ -22,7 +22,7 @@
   position: absolute;
   font-family: "amaranth", sans-serif;
   bottom: 215px;
-  left: 163px;
+  margin-left:10%;
   font-size: 58px;
   font-weight: bold;
 }
@@ -33,19 +33,20 @@
   font-family: 'Titillium Web', sans-serif;
   width: 385px;
   bottom: 95px;
-  left: 163px;
+  margin-left:10%;
+  line-height: 36px;
 }
 
 .myleague-globalSquares
 {
   display: flex;
-  margin-top: 346px;
+  margin-top: 30%;
 }
 
 .myleague-leaguesSquares1, .myleague-leaguesSquares2
 {
   width: 440px;
-  margin-left: 163px;
+  margin-left: 10%;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
@@ -105,4 +106,5 @@
   border-radius: 26px;
   border: none;
   color: #ffffff;
+  cursor: pointer;
 }
