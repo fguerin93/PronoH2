@@ -1,6 +1,5 @@
 <?php
 
-include '../database/database.php';
 include '../controllers/requestApi.php';
 
 $comp = 'PL';

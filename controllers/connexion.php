@@ -1,6 +1,5 @@
 <?php 
 
-include '../database/database.php';
 
 if(isset($_POST['formconnexion'])) {
     $pseudoconnect = htmlspecialchars($_POST['pseudoconnect']);
@@ -14,7 +13,6 @@ if(isset($_POST['formconnexion'])) {
             $_SESSION['id'] = $userinfo->id;
             $_SESSION['pseudo'] = $userinfo->pseudo;
             $_SESSION['mail'] = $userinfo->mail;
-            header('location: home');
         } else {
             $erreur = "Mauvais pseudo ou mot de passe !";
             echo "<script>alert(\"Mauvais pseudo ou mot de passe ! \")</script>";
