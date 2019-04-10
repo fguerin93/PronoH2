@@ -1,10 +1,3 @@
-.myLeague-h1
-{
-  font-family: "amaranth", sans-serif;
-  font-size: 58px;
-  font-weight: bold;
-}
-
 .myLeague-h2
 {
   font-family: "amaranth", sans-serif;
@@ -21,19 +14,26 @@
 
 .myleague-content
 {
-  margin-bottom: 56px;
+  position: relative;
 }
 
 .myleague-content h1
 {
-  margin-left: 163px;
+  position: absolute;
+  font-family: "amaranth", sans-serif;
+  bottom: 215px;
+  left: 163px;
+  font-size: 58px;
+  font-weight: bold;
 }
 
 .myleague-content p
 {
+  position: absolute;
   font-family: 'Titillium Web', sans-serif;
-  width: 430px;
-  margin-left: 163px;
+  width: 385px;
+  bottom: 95px;
+  left: 163px;
 }
 
 .myleague-globalSquares
