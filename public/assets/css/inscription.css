@@ -34,11 +34,12 @@
   position: absolute;
   margin-top: -0.5%;
   margin-left: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
   font-family: "amaranth", sans-serif;
   font-size: 16px;
   background: white;
-  padding-left: 1%;
-  padding-right: 1%
+
 }
 
 .inscription-container input
