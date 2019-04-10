@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?=URL?>assets/css/myLeagues.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/inscription.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/chooseMatch.css">
+    <link rel="stylesheet" href="<?=URL?>css/mesPronos.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 </head>
 <body>
@@ -36,7 +37,7 @@
                 <div>
                     <label for="password">Mot de passe</label><br>
                     <input type="password" name="passwordconnect" placeholder="Mot de passe" />
-                </div> 
+                </div>
                 <button type="submit" name="formconnexion">Connexion</button>
             </form>
         </div>
@@ -49,8 +50,8 @@
                 </div>
                 <div>
                     <p class="title">Email</p>
-                    <p><?= $_SESSION['mail'] ?></p>  
-                </div> 
+                    <p><?= $_SESSION['mail'] ?></p>
+                </div>
                 <a href="<?= URL ?>deconnexion"><button class="button-deconnected">Deconnexion</button></a>
         </div>
     </div>
