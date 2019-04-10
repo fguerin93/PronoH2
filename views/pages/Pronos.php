@@ -1,7 +1,6 @@
-<?php include 'header.php'; ?>
+<?php include '../views/partials/header.php'; ?>
 
 <div class="myPronos-principal">
-
 
   <div class="myPronos-content">
     <h1>Mes pronos</h1>

@@ -53,6 +53,11 @@ else if ($q == 'pronos')
     $controller = 'Pronos';
 }
 
+else if ($q == 'league')
+{
+    $controller = 'myLeagues';
+}
+
 // else if (preg_match('/^delete\/[1-9][0-9]*$/', $q))
 // {
 //     $controller = 'delete';

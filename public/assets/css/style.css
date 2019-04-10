@@ -243,11 +243,13 @@ header nav ul li .info
   margin-top: 8%;
   margin-left: 10%;
   display:flex;
+  border:1px solid red;
 }
 
 .home-container-connected .content 
 {
   width: 50%;
+  border:3px solid orange;
 }
 
 .home-container-connected .content h1
@@ -275,6 +277,7 @@ header nav ul li .info
   flex-flow: column;
   align-items: flex-start;
   justify-content: space-between;
+  border:3px solid blue;
 }
 
 .home-container-connected .content .league-container .league
@@ -284,7 +287,7 @@ header nav ul li .info
   background-color: #44538F;
   color: #ffffff;
   width: 430px;
-  height: 90px;
+  height: 145px;
   border-radius: 5px;
   margin-bottom: 45px;
   display: flex;
@@ -296,6 +299,24 @@ header nav ul li .info
   position: absolute;
   font-size: 25px;
   left: 22px;
+}
+
+.home-container-connected .content .league-container .league label
+ {
+  font-family: "amaranth", sans-serif;
+  font-size: 24px;
+}
+
+.home-container-connected .content .league-container .league input
+ {
+  width:350px;
+  height: 52px;
+  border:1px solid #979797;
+  border-radius:26px;
+  font-family: "amaranth", sans-serif;
+  font-size: 20px;
+  padding-left:15%;
+
 }
 
 .home-container-connected .content .league-container .league button 

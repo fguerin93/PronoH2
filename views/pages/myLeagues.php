@@ -1,7 +1,4 @@
-<?php include 'header.php'; ?>
-<head>
-  <link rel="stylesheet" href="css/myLeagues.css">
-</head>
+<?php include '../views/partials/header.php'; ?>
 <div class="myleague-principal">
   <div class="myleague-content">
     <h1>Mes ligues</h1>
