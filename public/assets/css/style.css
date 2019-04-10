@@ -211,6 +211,7 @@ header nav ul li .info
 .home-container .content button 
 {
   margin-top:5%;
+  margin-bottom: 100px;
   padding: 20px 70px 35px 70px;
   border-radius: 5px;
   font-family: "amaranth", sans-serif;
@@ -218,6 +219,11 @@ header nav ul li .info
   background: #3CB833;
   color: white;
   font-size: 18px;
+}
+
+.home-container .content button:hover
+{
+  cursor: pointer;
 }
 
 .home-container .illustration
@@ -362,6 +368,11 @@ header nav ul li .info
   border-radius: 26px;
   border: none;
   color: #ffffff;
+}
+
+.home-container-connected .content .league-container .league button:hover
+{
+  cursor: pointer;
 }
 
 /************
