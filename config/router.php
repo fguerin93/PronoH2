@@ -32,7 +32,7 @@ else if ($q == 'matchs')
 {
     $controller = 'chooseMatch';
 }
-  
+
 else if ($q == 'connexion')
 {
     $controller = 'connexion';
@@ -46,6 +46,11 @@ else if ($q == 'deconnexion')
 else if ($q == 'league')
 {
     $controller = 'createLeague';
+}
+
+else if ($q == 'pronos')
+{
+    $controller = 'Pronos';
 }
 
 // else if (preg_match('/^delete\/[1-9][0-9]*$/', $q))
