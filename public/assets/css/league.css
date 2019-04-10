@@ -1,17 +1,19 @@
-.new-league-container {
-  position: absolute;
+.new-league-container
+{
   width: 80%;
   height: 100%;
+  margin-top: 8%;
   margin-left: 10%;
+  display:flex;
 }
 
-.new-league-container .content {
-  position: absolute;
-  top: 15%;
+.new-league-container .content
+{
   width: 50%;
 }
 
-.new-league-container .content h1 {
+.new-league-container .content h1
+{
   width: 400px;
   margin-bottom: 30px;
   line-height: 71px;
@@ -20,17 +22,20 @@
   font-weight: bold;
 }
 
-.new-league-container form {
+.new-league-container form
+{
   margin-top: 8%;
 }
 
-.new-league-container p {
+.new-league-container p
+{
   font-family: 'Titillium Web', sans-serif;
   line-height: 36px;
   font-size: 22px;
 }
 
-.new-league-container form label {
+.new-league-container form label
+{
   position: absolute;
   margin-left: 5%;
   font-family: "amaranth", sans-serif;
@@ -39,7 +44,8 @@
   padding: 1%;
 }
 
-.new-league-container form input {
+.new-league-container form input
+{
   width: 325px;
   padding: 5%;
   border: 1px solid #5D5D5D;
@@ -47,11 +53,13 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
-.new-league-container form div {
+.new-league-container form div
+{
   margin-bottom: 3%;
 }
 
-.new-league-container form textarea {
+.new-league-container form textarea
+{
   width: 400px;
   height: 150px;
   padding: 5%;
@@ -60,7 +68,8 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
-.new-league-container .content button {
+.new-league-container .content button
+{
   position: absolute;
   margin-top: 15px;
   padding: 20px 70px 35px 70px;
@@ -76,14 +85,14 @@
     illustration
 *************/
 
-.new-league-container .illustration {
-  position: absolute;
-  top: 25%;
+.new-league-container .illustration
+{
   width: 50%;
-  margin-left: 50%;
+  margin-top:8%;
 }
 
-.new-league-container .illustration img {
+.new-league-container .illustration img
+{
   padding-left: 10%;
   width: 90%;
 }

@@ -1,0 +1,166 @@
+/***************************
+  choose what competition 
+***************************/
+.container-matchs
+{
+  width:80%;
+  height: 100%;
+  margin-left:10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.container-matchs h1
+{
+  margin-bottom:30px;
+  line-height:71px;
+  font-size:58px;
+  font-family: 'Amaranth', sans-serif;
+  font-weight: bold;
+}
+
+.container-matchs .selected-match
+{
+  margin-bottom:3%;
+}
+
+.container-matchs .selected-match label
+{
+  position: absolute;
+  margin-top:-0.5%;
+  margin-left:3%;
+  font-family:"amaranth", sans-serif;
+  font-size: 16px;
+  background:white;
+  padding-left:1%;
+  padding-right:1%
+}
+
+.container-matchs .selected-match select
+{
+  width:325px;
+  height:45px;
+  padding-top:1.5%;
+  padding-left:3%;
+  border:1px solid #5D5D5D;
+  border-radius: 5px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size:16px;
+}
+
+/**********************************
+  choose what competition - option
+**********************************/
+
+.container-matchs .selected-match option {
+
+
+}
+
+
+/******************
+  select match
+*******************/
+
+.container-matchs .content-matchs
+{
+  width:100%;
+  margin-bottom:3%;
+}
+
+.container-matchs .content-matchs h2
+{
+  font-family: 'Titillium Web', sans-serif;
+  line-height: 36px;
+  font-size:22px;
+
+}
+
+.container-matchs .content-matchs .match-to-select-all-columns
+{
+  width:100%;
+  margin-top:3%;
+  display:flex;
+}
+
+.container-matchs .content-matchs .match-to-select-left-column
+{
+  width:45%;
+}
+
+.container-matchs .content-matchs .match-to-select-right-column{
+  width:45%;
+  margin-left:10%;
+}
+
+.container-matchs .content-matchs .match-to-select
+{
+  width:100%;
+  height:110px;
+  margin-bottom:3%;
+  padding-left:3%;
+  padding-right:3%;
+  font-family:"amaranth", sans-serif;
+  font-size:16px;
+  border-radius:5px;
+  background:#44538F;
+  color:white;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.container-matchs .content-matchs .match-to-select:hover
+{
+  cursor: pointer;
+}
+
+.container-matchs .content-matchs .match-to-select.active
+{
+  background:#3CB833;
+}
+
+.container-matchs .content-matchs .match-to-select.right
+{
+  width:100%;
+}
+
+/******************
+  match-to-select
+*******************/
+.container-matchs .content-matchs .match-to-select p
+{
+  width:20%;
+  display:flex;
+  line-height: 24px;
+}
+
+.container-matchs .content-matchs .match-to-select .match-to-select-vs{
+  display:flex;
+  justify-content: center;
+ font-size:24px;
+}
+
+/******************
+  button
+*******************/
+.container-matchs .container-button-matchs
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-matchs .button-matchs
+{
+  width:320px;
+  padding-top:3%;
+  padding-bottom:4%;
+  border-radius:5px;
+  font-size:18px;
+  font-family:"amaranth", sans-serif;
+  background:#3CB833;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-content:center;
+}

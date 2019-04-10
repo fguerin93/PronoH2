@@ -17,11 +17,11 @@
 <body>
     <header>
         <nav>
-            <a href="<?=URL?>" class="title-nav">Pea</a>
+            <div class="logo-nav">
+                <a href="<?=URL?>home"><img src="<?=URL?>assets/images/logo.svg" alt="logo" class="logo"></a>
+            </div>
             <ul>
-                <li><a href="<?=URL?>league"> Créer ma ligue</a></li>
-                <li><a href=""> Mes ligues</a></li>
-                <li><a href=""> Mes pronos</a></li>
+                <li><a href="<?=URL?>myLeagues"> Mes ligues</a></li>
                 <li><a href=""><img src="<?=URL?>assets/images/icon-1.png" alt=""  class="info"></a></li>
                 <li><img src="<?=URL?>assets/images/icon-2.png" alt="" class="icon-connexion"></li>
             </ul>
