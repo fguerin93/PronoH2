@@ -27,6 +27,11 @@ else if ($q == 'league')
 {
     $controller = 'createLeague';
 }
+
+else if ($q == 'matchs')
+{
+    $controller = 'chooseMatch';
+}
   
 else if ($q == 'connexion')
 {

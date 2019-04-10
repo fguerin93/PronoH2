@@ -20,7 +20,7 @@ include '../views/partials/header.php';
                      <textarea name="text" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
                  </div>
                 <p>Maintenant invite tes amis !</p>
-                <button type="submit" name="formcreationleague">Créer ma ligue</button>
+                <button type="submit" name="formcreationleague">Choisis tes matchs</button>
             </form>
         </div>
         <div class="illustration">
