@@ -16,6 +16,16 @@ include '../views/partials/header.php';
     </select>
 </form>
 
+<h2>Clique sur le match pour le sélectionner</h2>
+
+<?php for ($i = 0; $i < 20; $i++) { ?>  
+    <div>
+        <p><?= $matches->matches[$i]->homeTeam->name ?></p>
+        <p>VS</p>
+        <p><?= $matches->matches[$i]->awayTeam->name ?></p>
+        <p><?= $matches->matches[$i]->utcDate ?></p>
+    </div>
+<?php } ?>
 
 <?php 
 include '../views/partials/footer.php';
