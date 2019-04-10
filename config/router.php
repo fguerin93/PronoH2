@@ -43,17 +43,12 @@ else if ($q == 'deconnexion')
     $controller = 'deconnexion';
 }
 
-else if ($q == 'league')
-{
-    $controller = 'createLeague';
-}
-
 else if ($q == 'pronos')
 {
     $controller = 'Pronos';
 }
 
-else if ($q == 'league')
+else if ($q == 'myleagues')
 {
     $controller = 'myLeagues';
 }
