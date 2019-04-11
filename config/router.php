@@ -50,7 +50,7 @@ else if ($q == 'myleagues')
 
 else if (preg_match('/^pronos\/[1-9][0-9]*$/', $q))
 {
-    $controller = 'Pronos';
+    $controller = 'pronos';
 }
 
 // else if ($q == 'about-us')

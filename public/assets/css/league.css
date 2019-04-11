@@ -37,10 +37,10 @@
 .new-league-container form label
 {
   position: absolute;
-  margin-top: 1%;
   margin-left: 3%;
   padding-left: 1%;
   padding-right: 1%;
+  padding-top: 1%;
   font-family: "amaranth", sans-serif;
   font-size: 16px;
   background: white;
@@ -96,6 +96,6 @@
 
 .new-league-container .illustration img
 {
-  padding-left: 10%;
   width: 90%;
+  padding-left: 10%;
 }

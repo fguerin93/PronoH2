@@ -23,10 +23,10 @@
 
 .inscription-container p
 {
+  margin-bottom: 7%;
   font-family: 'Titillium Web', sans-serif;
   line-height: 36px;
   font-size: 22px;
-  margin-bottom: 7%;
 }
 
 .inscription-container label
