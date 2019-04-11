@@ -16,7 +16,7 @@ for(const $match of $matchesToSelect)
                 selectedMatches.push($match.dataset.id)
             }
         } 
-    
+          
         $inputMatchSelected.value = selectedMatches.join(',')
     })
 }
