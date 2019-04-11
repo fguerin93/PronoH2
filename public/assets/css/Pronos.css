@@ -38,7 +38,8 @@ label {
 
   position: absolute;
   top: 80px;
-  font-size: 70px;
+  font-size: 58px;
+  font-weight: bold;
 }
 
 .myPronos-principal .myPronos-content .myPronos-ranking
@@ -53,7 +54,7 @@ label {
   width:250px;
   position: absolute;
   left:800px;
-  top: 20%;
+  top: 21%;
   display:flex;
 
 }
@@ -116,14 +117,15 @@ label {
 }
 
 /** Input design **/
-.input-container
-{
-  background-color: #44538F;
+
+.myPronos-sqare input::-webkit-outer-spin-button,
+.myPronos-sqare input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
-.input-container:nth-child(4n)
+.input-container:nth-child(2n+2)
 {
-  background-color: red;
+  background-color: #6378CC;
 }
 
 .myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos .myPronos-pronoLabel
@@ -142,8 +144,8 @@ label {
 }
 .separation
 {
-  padding-left:4%;
-  padding-right:4%;
+  margin-left:5%;
+  margin-right:5%;
 }
 
 .myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos .myPronos-pronoLabel .myPronos-inputScore input
@@ -154,6 +156,7 @@ label {
   font-size:36px;
   font-family: 'Titillium Web', sans-serif;
   border-bottom:1px solid white;
+  text-align: center;
 }
 
 .myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos .myPronos-pronoLabel .myPronos-inputScore p
@@ -168,6 +171,7 @@ label {
   display:flex;
   flex-direction: column;
   align-items:center;
+  padding-bottom:8%;
 }
 
 /*final score*/ 
