@@ -352,6 +352,7 @@ header nav ul li .info
   margin-top:3%;
   font-family: "amaranth", sans-serif;
   font-size: 20px;
+  text-decoration: none;
   cursor: pointer;
   background-color: #3CB833;
   color: #ffffff;

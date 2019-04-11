@@ -11,7 +11,7 @@
                 <div class="league-container">
                     <div class="league">
                         <h2 class="league-name">Créer une ligue</h2>
-                        <a class="stateButton">Créer</a>
+                        <a href="<?=URL?>league" class="stateButton">Créer</a>
                     </div>
                     <div class="league">
                         <form action="" methode="POST">
