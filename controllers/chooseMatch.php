@@ -32,7 +32,7 @@ if(isset($_POST['formaddmatch']))
         $date = $matchesArray[$i]->match->utcDate;
 
         $reqmatches = $pdo->prepare("SELECT * FROM matches WHERE id_matches = ?");
-        $reqmatches->execute(array($idMatches));
+        $reqmatches->execute(array($id_matches));
         $matchesExist = $reqmatches->rowCount();
         if ($matchesExist == 0)
         {
@@ -43,6 +43,8 @@ if(isset($_POST['formaddmatch']))
             $insertmatches->bindValue('away_team', $away_team);
             $insertmatches->bindValue('date', $date);
             $insertmatches->execute();
+        } else {
+            echo "<script>alert(\"match deja là \")</script>";
         }
 
         //request for max id league

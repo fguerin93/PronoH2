@@ -60,7 +60,6 @@
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  justify-content: space-between;
 }
 
 .myleague-leaguesSquares2 .myleague-square2
