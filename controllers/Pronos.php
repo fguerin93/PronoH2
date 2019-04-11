@@ -3,22 +3,26 @@
     $title = 'Pronos';
 
     include '../controllers/requestApi.php';
+    include '../controllers/getScore.php';
 
     // $zer = apiRequestByMatch(239280);
     // echo '<pre>';
     // print_r($zer);
     // echo '</pre>';
 
-    //req for variables to put in views
+    //explode url to get league
     $qExplode = explode("/",$q);
     $idLeague = strval($qExplode[1]);
 
+    //req for matches infos
     $reqmatches = $pdo->query('SELECT * FROM matches WHERE id_matches IN (SELECT id_match FROM league_matches WHERE id_league = '.$idLeague.')');
     $matches = $reqmatches->fetchAll();
 
+    //req for idleagues
     $reqidmatches = $pdo->query('SELECT id FROM league_matches WHERE id_league ='.$idLeague);
     $idLeaguesMatches = $reqidmatches->fetchAll();
 
+    //req for code
     $reqcode = $pdo->query('SELECT code FROM leagues WHERE id = '.$idLeague);
     $code = $reqcode->fetchAll();
 

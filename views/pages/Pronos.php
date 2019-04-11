@@ -6,7 +6,7 @@
         <h1>Mes pronos</h1>
         <div class="myPronos-ranking">
             <img src="" alt="">
-            <p>Tu es actuellement <span>1er/6 </span>de ta ligue BRAVO !</p>
+            <p>Tu es actuellement <span>1er/ <?= getNumberInLeague($idLeague) ?></span>de ta ligue BRAVO !</p>
         </div>
         <div class="myPronos-code">
             <p>Code d'invitation:</p>
