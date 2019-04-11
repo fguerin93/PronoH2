@@ -1,4 +1,5 @@
-.ranking-container{
+.ranking-container
+{
     width:80%;
     height: 100%;
     top:15%;
@@ -6,26 +7,33 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.ranking-container .ranking-content h1{
+
+.ranking-container .ranking-content h1
+{
     margin-bottom:40px;
     font-size:58px;
     font-family: 'Amaranth', sans-serif;
     font-weight: bold;
 }
-.ranking-container .ranking-content .rank-row{
+
+.ranking-container .ranking-content .rank-row
+{
     display:flex;
     align-items: center;
     justify-content: space-between;
     
 }
-.ranking-container .ranking-content h2 {
+
+.ranking-container .ranking-content h2
+{
     margin-bottom:30px;
     font-size:40px;
     font-family: 'Titillium Web', sans-serif;
     font-weight:600;
 }
 
-.ranking-container .ranking-content a{
+.ranking-container .ranking-content a
+{
     width:160px;
     height: 32px;
     padding:18px 70px;
@@ -45,32 +53,41 @@
 **************/
 
 
-.ranking-container table{
+.ranking-container table
+{
     width: 100%;
     margin-top:4%;
     font-family: 'Titillium Web', sans-serif;
     border-collapse: collapse;
-
 }
-.ranking-container table .left-corner{
+
+.ranking-container table .left-corner
+{
     border-top-left-radius: 5px;
 }
-.ranking-container table .right-corner{
+
+.ranking-container table .right-corner
+
+{
     border-top-right-radius: 5px;
 }
-.ranking-container table tr:nth-child(even){
+
+.ranking-container table tr:nth-child(even)
+{
     background-color: #E9EBF1;
 }
-.ranking-container table th {
+
+.ranking-container table th
+{
     background:#44538F;
     color: white;
     padding: 2% 8%;
     text-align: center;
-
 }
-.ranking-container table td{
+
+.ranking-container table td
+{
     padding: 2% 8%;
     text-align: center;
-
 }
 
