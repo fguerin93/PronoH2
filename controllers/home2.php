@@ -1,6 +1,6 @@
 <?php
 
-$title = 'Home2';
+$title = 'Home';
 
 $idUsers = $_SESSION['id'];
 
