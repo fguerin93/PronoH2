@@ -66,4 +66,12 @@
 
     }
 
+    //prepare score to display
+
+    foreach ($matches as $i => $match)
+    {
+        var_dump($matches[$i]->status);
+    }
+
+
     include '../views/pages/Pronos.php';

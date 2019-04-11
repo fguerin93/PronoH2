@@ -30,18 +30,20 @@ if(isset($_POST['formaddmatch']))
         $home_team = $matchesArray[$i]->match->homeTeam->name;
         $away_team = $matchesArray[$i]->match->awayTeam->name;
         $date = $matchesArray[$i]->match->utcDate;
+        $status = $matchesArray[$i]->match->status;
 
         $reqmatches = $pdo->prepare("SELECT * FROM matches WHERE id_matches = ?");
         $reqmatches->execute(array($id_matches));
         $matchesExist = $reqmatches->rowCount();
         if ($matchesExist == 0)
         {
-            $insertmatches = $pdo->prepare('INSERT INTO matches(id_matches, home_team, away_team, date) VALUES (:id_matches, :home_team, :away_team, :date)');
+            $insertmatches = $pdo->prepare('INSERT INTO matches(id_matches, home_team, away_team, date, status) VALUES (:id_matches, :home_team, :away_team, :date, :status)');
 
             $insertmatches->bindValue('id_matches', $id_matches);
             $insertmatches->bindValue('home_team', $home_team);
             $insertmatches->bindValue('away_team', $away_team);
             $insertmatches->bindValue('date', $date);
+            $insertmatches->bindValue('status', $status);
             $insertmatches->execute();
         } else {
             echo "<script>alert(\"match deja là \")</script>";
