@@ -6,7 +6,7 @@
             <a href="">Newsletter</a>
             <a href="">Support</a>
             </div>
-            <p>Copyright 2019<span>©PronoEntreAmi</span></p>
+            <p>Copyright 2019<span>©PronosEntreAmi</span></p>
         </footer>
         <script src="<?=URL?>assets/js/login.js"></script>
         <script src="<?=URL?>assets/js/chooseMatch.js"></script>

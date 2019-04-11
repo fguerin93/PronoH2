@@ -1,7 +1,7 @@
 <?php
 include '../views/partials/header.php';
 ?>
-
+<div class="background-div">
     <div class="new-league-container">
         <div class="content">
             <h1>Nouvelle ligue</h1>
@@ -27,5 +27,6 @@ include '../views/partials/header.php';
             <img src="<?=URL?>assets/images/img-2.svg" alt="foot">
         </div>
     </div>
+</div>
 
 <?php include '../views/partials/footer.php' ?>

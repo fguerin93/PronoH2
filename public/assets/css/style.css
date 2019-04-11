@@ -194,9 +194,9 @@ header .icon-connexion:hover
 }
 
 
-/*****************
-    information nav
-********************/
+/*********************
+    information rules 
+***********************/
 
 .container-informations
 {
@@ -215,6 +215,11 @@ header .icon-connexion:hover
 .container-informations.active
 {
   display:block;
+}
+
+.background-div.active
+{
+  opacity:0.5
 }
 
 .container-informations .header{
@@ -259,7 +264,7 @@ header .icon-connexion:hover
 }
 
 /************
-    body
+    BODY
 *************/
 
 .home-container 
@@ -268,7 +273,8 @@ header .icon-connexion:hover
   height: 100%;
   margin-top: 8%;
   margin-left: 10%;
-  display:flex;
+  display:flex; 
+  padding-bottom:4%;
 }
 
 .home-container .content
@@ -423,7 +429,6 @@ header .icon-connexion:hover
   font-family: "amaranth", sans-serif;
   font-size: 20px;
   padding-left:15%;
-
 }
 
 .home-container-connected .content .league-container .league a
@@ -483,6 +488,7 @@ header .icon-connexion:hover
   display: flex;
   justify-content: center;
 }
+
 .container-404, .container-404-message p
 {
   padding-top:4%;
@@ -495,8 +501,6 @@ header .icon-connexion:hover
   display:flex;
   justify-content: center;
 }
-
-
 
 
 /************

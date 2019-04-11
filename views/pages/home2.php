@@ -1,5 +1,6 @@
 <?php include '../views/partials/header.php' ?>
 
+<div class="background-div">
     <div class="home-container-connected">
         <div class="content">
             <h1>Pronos entre amis</h1>
@@ -24,5 +25,6 @@
             </div>
         </div>
     </div>
+</div>
 
 <?php include '../views/partials/footer.php' ?>

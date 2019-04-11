@@ -53,4 +53,6 @@ if(isset($_POST['forminscription']))
     }
 }
 
+include '../controllers/connexion.php';
+
 include '../views/pages/inscription.php';
