@@ -6,7 +6,7 @@
         <h1>Mes pronos</h1>
         <div class="myPronos-ranking">
             <img src="" alt="">
-            <p>tu es actuellement <span>1er/6 </span>de ta ligue BRAVO !</p>
+            <p>Tu es actuellement <span>1er/6 </span>de ta ligue BRAVO !</p>
         </div>
         <div class="myPronos-code">
             <p>Code d'invitation:</p>
@@ -31,9 +31,13 @@
                             <div class="myPronos-pronoLabel">
                                 <label for="prono" class="bet-title">Mon prono</label>
                                 <div class="myPronos-inputScore">
-                                    <input type="number" id="scoreProno" name="home_goals[]" min="0" max="10" value="<?= $pronos[$i]->score_home ?>">
+                                    <div class="input-container">
+                                        <input type="number" id="scoreProno" name="home_goals[]" min="0" max="10" value="<?= $pronos[$i]->score_home ?>">
+                                    </div>
                                     <p class="separation">-</p>
-                                    <input type="number" id="scoreProno" name="away_goals[]" min="0" max="10" value="<?= $pronos[$i]->score_away ?>">
+                                    <div class="input-container">
+                                        <input type="number" id="scoreProno" name="away_goals[]" min="0" max="10" value="<?= $pronos[$i]->score_away ?>">
+                                    </div>
                                 </div>
                             </div>
                         </div>
