@@ -12,14 +12,12 @@
     $reqidmatches = $pdo->query('SELECT id FROM league_matches WHERE id_league ='.$idLeague);
     $idLeaguesMatches = $reqidmatches->fetchAll();
 
-    // echo '<pre>';
-    // print_r($idLeaguesMatches);
-    // echo '</pre>';
-
     $reqcode = $pdo->query('SELECT code FROM leagues WHERE id = '.$idLeague);
     $code = $reqcode->fetchAll();
 
     //form for bets
+    $reqpronos = $pdo->query('SELECT score_home, score_away FROM bets WHERE id_league = '.$idLeague);
+    $pronos = $reqpronos->fetchAll();
 
     if(isset($_POST['formbets']))
     {
@@ -46,8 +44,20 @@
 
             for ($i = 0; $i < sizeof($homeGoalsArray); $i++)
             {
-                $insertmbr = $pdo->prepare("INSERT INTO bets(id_users, id_leagues_matches, score_home, score_away) VALUES(?, ?, ?, ?)");
-                $insertmbr->execute(array($idUsers, $idLeaguesMatches[$i]->id, $homeGoalsArray[$i], $awayGoalsArray[$i]));
+                $reqidleaguematches = $pdo->prepare("SELECT * FROM bets WHERE id_leagues_matches = ?");
+                $reqidleaguematches->execute(array($idLeaguesMatches[$i]->id));
+                $idLeagueMatchesExist = $reqidleaguematches->rowCount();
+                if($idLeagueMatchesExist == 0)
+                {
+                    $insertmbr = $pdo->prepare("INSERT INTO bets(id_users, id_league, id_leagues_matches, score_home, score_away) VALUES(?, ?, ?, ?, ?)");
+                    $insertmbr->execute(array($idUsers, $idLeague, $idLeaguesMatches[$i]->id, $homeGoalsArray[$i], $awayGoalsArray[$i]));
+                    header('location: pronos/'.$idLeague);
+                }
+                else {
+                    var_dump($idLeaguesMatches[$i]->id);
+                    $updatembr = $pdo->exec('UPDATE bets SET score_home = '.$homeGoalsArray[$i].', score_away = '.$awayGoalsArray[$i].' WHERE id_leagues_matches='.$idLeaguesMatches[$i]->id);
+                    header('location: ../pronos/'.$idLeague);
+                }
             }
 
         } else {

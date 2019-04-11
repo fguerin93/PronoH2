@@ -31,9 +31,9 @@
                             <div class="myPronos-pronoLabel">
                                 <label for="prono" class="bet-title">Mon prono</label>
                                 <div class="myPronos-inputScore">
-                                    <input type="number" id="scoreProno" name="home_goals[]" min="0" max="10" value="<?= $homeGoalsArray[$i] ?>">
+                                    <input type="number" id="scoreProno" name="home_goals[]" min="0" max="10" value="<?= $pronos[$i]->score_home ?>">
                                     <p class="separation">-</p>
-                                    <input type="number" id="scoreProno" name="away_goals[]" min="0" max="10" value="<?= $awayGoalsArray[$i] ?>">
+                                    <input type="number" id="scoreProno" name="away_goals[]" min="0" max="10" value="<?= $pronos[$i]->score_away ?>">
                                 </div>
                             </div>
                         </div>
