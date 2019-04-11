@@ -43,20 +43,15 @@ else if ($q == 'deconnexion')
     $controller = 'deconnexion';
 }
 
-else if ($q == 'pronos')
-{
-    $controller = 'Pronos';
-}
-
 else if ($q == 'myleagues')
 {
     $controller = 'myLeagues';
 }
 
-// else if (preg_match('/^delete\/[1-9][0-9]*$/', $q))
-// {
-//     $controller = 'delete';
-// }
+else if (preg_match('/^pronos\/[1-9][0-9]*$/', $q))
+{
+    $controller = 'Pronos';
+}
 
 // else if ($q == 'about-us')
 // {
