@@ -1,6 +1,5 @@
-<?php
-include '../views/partials/header.php';
-?>
+<?php include '../views/partials/header.php'; ?>
+
 <div class="background-div">
     <div class="container-matchs">
         <h1>Choisis tes matchs</h1>
@@ -55,6 +54,4 @@ include '../views/partials/header.php';
     </div>
 </div>
 
-<?php
-include '../views/partials/footer.php';
-?>
+<?php include '../views/partials/footer.php'; ?>

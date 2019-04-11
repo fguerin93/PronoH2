@@ -1,7 +1,6 @@
 <?php include '../views/partials/header.php'; ?>
 
 <div class="myPronos-principal">
-
     <div class="myPronos-content">
         <h1>Mes pronos</h1>
     <div class="prono-ranking-code">
@@ -14,8 +13,6 @@
             <p class="code-name"><?= $code[0]->code ?></p>
         </div>
     </div>
-
-
     <div class="myPronos-globalSqares">
 
         <!-- premier rectangle de score -->
@@ -68,8 +65,6 @@
                 <input type="submit" name="formbets" value="Valider" class="bets-button" />
             </div>
         </form>
-
-        <!-- fin premier rectangle -->
     </div>
 </div>
 

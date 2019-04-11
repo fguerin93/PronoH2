@@ -1,6 +1,5 @@
-<?php
-include '../views/partials/header.php';
-?>
+<?php include '../views/partials/header.php'; ?>
+
 <div class="background-div">
     <div class="new-league-container">
         <div class="content">

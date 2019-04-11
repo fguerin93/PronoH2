@@ -1,8 +1,5 @@
-<?php
+<?php include '../views/partials/header.php'; ?>
 
-include '../views/partials/header.php';
-
-?>
 <div class="background-div">
   <div class="inscription-container">
     <div class="inscription-form">
@@ -64,10 +61,4 @@ include '../views/partials/header.php';
   </div>
 </div>
 
-
-
-<?php
-
-include '../views/partials/footer.php';
-
-?>
+<?php include '../views/partials/footer.php'; ?>
