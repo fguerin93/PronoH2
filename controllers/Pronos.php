@@ -2,15 +2,58 @@
 
     $title = 'Pronos';
 
+    //req for variables to put in views
     $qExplode = explode("/",$q);
     $idLeague = strval($qExplode[1]);
-    var_dump($idLeague);
 
     $reqmatches = $pdo->query('SELECT * FROM matches WHERE id_matches IN (SELECT id_match FROM league_matches WHERE id_league = '.$idLeague.')');
     $matches = $reqmatches->fetchAll();
 
-    echo '<pre>';
-    print_r($matches);
-    echo '</pre>';
+    $reqidmatches = $pdo->query('SELECT id FROM league_matches WHERE id_league ='.$idLeague);
+    $idLeaguesMatches = $reqidmatches->fetchAll();
+
+    // echo '<pre>';
+    // print_r($idLeaguesMatches);
+    // echo '</pre>';
+
+    $reqcode = $pdo->query('SELECT code FROM leagues WHERE id = '.$idLeague);
+    $code = $reqcode->fetchAll();
+
+    //form for bets
+
+    if(isset($_POST['formbets']))
+    {
+        $homeGoalsArray = $_POST['home_goals'];
+        $awayGoalsArray = $_POST['away_goals'];
+
+        $verifyVar = 0;
+
+        for ($i = 0; $i < sizeof($homeGoalsArray); $i++)
+        {  
+            if ((!empty($homeGoalsArray[$i])) AND (!empty($awayGoalsArray[$i])))
+            {
+                $verifyVar = $verifyVar + 1;
+            }
+            else if (($homeGoalsArray[$i]=='0') || ($awayGoalsArray[$i]=='0'))
+            {
+                $verifyVar = $verifyVar + 1;
+            }
+        }
+
+        if (sizeof($homeGoalsArray)==$verifyVar)
+        {
+            $idUsers = htmlspecialchars($_SESSION['id']);
+
+            for ($i = 0; $i < sizeof($homeGoalsArray); $i++)
+            {
+                $insertmbr = $pdo->prepare("INSERT INTO bets(id_users, id_leagues_matches, score_home, score_away) VALUES(?, ?, ?, ?)");
+                $insertmbr->execute(array($idUsers, $idLeaguesMatches[$i]->id, $homeGoalsArray[$i], $awayGoalsArray[$i]));
+            }
+
+        } else {
+            $erreur = "Tous les champs doivent être complétés !";
+        }
+
+    }
 
     include '../views/pages/Pronos.php';
