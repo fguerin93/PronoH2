@@ -1,7 +1,5 @@
 <?php
 
-include '../database/database.php';
-
 if(isset($_POST['forminscription']))
 {
     $pseudo = htmlspecialchars($_POST['pseudo']);
