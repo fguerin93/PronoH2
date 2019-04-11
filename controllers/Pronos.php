@@ -5,7 +5,7 @@
     include '../controllers/requestApi.php';
     include '../controllers/getScore.php';
 
-    // $zer = apiRequestByMatch(239280);
+    // $zer = apiRequestByMatch(233339);
     // echo '<pre>';
     // print_r($zer);
     // echo '</pre>';

@@ -53,6 +53,11 @@ else if (preg_match('/^pronos\/[1-9][0-9]*$/', $q))
     $controller = 'Pronos';
 }
 
+else if ($q == 'ranking')
+{
+    $controller = 'ranking';
+}
+
 // else if ($q == 'about-us')
 // {
 //     $controller = 'about';

@@ -1,10 +1,10 @@
 .ranking-container{
     width:80%;
     height: 100%;
-    position: absolute;
     top:15%;
     margin-left:10%;
-
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 .ranking-container .ranking-content h1{
     margin-bottom:40px;

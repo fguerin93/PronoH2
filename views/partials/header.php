@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?=URL?>assets/css/inscription.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/chooseMatch.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/Pronos.css">
+    <link rel="stylesheet" href="<?=URL?>assets/css/rankinga.css">
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 </head>
 <body>
