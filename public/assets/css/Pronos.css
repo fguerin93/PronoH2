@@ -22,41 +22,41 @@ label {
 /** Text  content **/
 .myPronos-principal
 {
+  width:80%;
+  margin-left:10%;
+  margin-top: 8%;
   display:flex;
   justify-content: center;
+  flex-direction: column;
 
 }
 
 .myPronos-principal .myPronos-content
 {
   display: flex;
-  position: relative;
+  flex-direction: column;
+
 }
 
 .myPronos-principal .myPronos-content h1
 {
-
-  position: absolute;
-  top: 80px;
+  margin-bottom: 5%;
   font-size: 58px;
   font-weight: bold;
 }
 
-.myPronos-principal .myPronos-content .myPronos-ranking
-{
-  position: absolute;
-  width:400px;
-  top: 20%;
-}
 
 .myPronos-principal .myPronos-content .myPronos-code
 {
-  width:250px;
-  position: absolute;
-  left:800px;
-  top: 21%;
+  margin-top:2%;
   display:flex;
 
+}
+.prono-ranking-code
+{
+  display:flex;
+  align-content: center;
+  justify-content: space-between;
 }
 
 .myPronos-code .code-name
@@ -72,8 +72,8 @@ label {
 
 .myPronos-globalSqares
 {
-  margin-top: 340px;
-  width:80%;
+  width:100%;
+  margin-top: 5%;
 }
 
 .myPronos-sqare
@@ -88,21 +88,6 @@ label {
 
 .myPronos-sqare:nth-child(even){
   background-color: #6378CC
-}
-
-
-/** Logo league **/
-
-.myPronos-sqare .myPronos-leagueLogo, .myPronos-sqarebis .myPronos-leagueLogo
-{
-  margin-top: 4px;
-  margin-left: 4px;
-}
-
-.myPronos-sqare .myPronos-leagueLogo img
-{
-  width: 45px;
-  height: 45px;
 }
 
 /** date match **/
