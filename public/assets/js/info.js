@@ -7,22 +7,11 @@ let infoIsOpen = false
 
 icon.addEventListener('click', () =>
 {
-    if (!infoIsOpen)
-    {
-        infoContainer.style.display = "block"
-        body.style.opacity = "0.4"
-        cross.addEventListener('click', () =>
-        {
-            infoContainer.style.display = "none"
-            body.style.opacity = "1"
-        })
-    }
+    infoContainer.classList.toggle('active')
+})
 
-    else
-    {
-        infoContainer.style.display = "none"
-        body.style.opacity = "1"
-    }
-    infoIsOpen = !infoIsOpen
+cross.addEventListener('click', () =>
+{
+    infoContainer.classList.toggle('active')
 })
 

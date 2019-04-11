@@ -22,7 +22,7 @@
             </div>
             <ul>
                 <li><a href="<?=URL?>myleagues"> Mes ligues</a></li>
-                <li><img src="<?=URL?>assets/images/icon-1.png" alt=""  class="info"></li>
+                <li class="information"><img src="<?=URL?>assets/images/icon-1.png" alt=""  class="info"></li>
                 <li><img src="<?=URL?>assets/images/icon-2.png" alt="" class="icon-connexion"></li>
             </ul>
         </nav>
