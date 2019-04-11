@@ -44,14 +44,14 @@
     </div>
     <div class="container-deconnexion">
         <div class="login">
-                <div>
-                    <p class="title">Pseudo</p>
-                    <p><?= $_SESSION['pseudo'] ?></p>
-                </div>
-                <div>
-                    <p class="title">Email</p>
-                    <p><?= $_SESSION['mail'] ?></p>
-                </div>
-                <a href="<?= URL ?>deconnexion"><button class="button-deconnected">Deconnexion</button></a>
+            <div>
+                <p class="title">Pseudo</p>
+                <p><?= $_SESSION['pseudo'] ?></p>
+            </div>
+            <div>
+                <p class="title">Email</p>
+                <p><?= $_SESSION['mail'] ?></p>
+            </div>
+            <a href="<?= URL ?>deconnexion"><button class="button-deconnected">Deconnexion</button></a>
         </div>
     </div>

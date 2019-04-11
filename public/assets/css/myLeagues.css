@@ -24,38 +24,38 @@
 
 .myleague-content h1
 {
-    position: absolute;
-    font-family: "amaranth", sans-serif;
-    bottom: 215px;
-    left: 163px;
-    font-size: 58px;
-    font-weight: bold;
+  position: absolute;
+  font-family: "amaranth", sans-serif;
+  bottom: 215px;
+  margin-left:10%;
+  font-size: 58px;
+  font-weight: bold;
 }
 
 .myleague-content p
 {
-    position: absolute;
-    font-size: 22px;
-    font-family: 'Titillium Web', sans-serif;
-    line-height: 130%;
-    width: 385px;
-    bottom: 80px;
-    left: 163px;
+  position: absolute;
+  font-family: 'Titillium Web', sans-serif;
+  width: 385px;
+  bottom: 95px;
+  margin-left:10%;
+  line-height: 36px;
 }
 
 .myleague-globalSquares
 {
-    display: flex;
-    margin-top: 346px;
+  display: flex;
+  margin-top: 30%;
 }
 
 .myleague-leaguesSquares1, .myleague-leaguesSquares2
 {
-    width: 440px;
-    margin-left: 163px;
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
+  width: 440px;
+  margin-left: 10%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .myleague-leaguesSquares2 .myleague-square2
@@ -103,15 +103,16 @@
 
 .myleague-square1 .myleague-stateButton, .myleague-square2 .myleague-stateButton
 {
-    position: absolute;
-    right: 22px;
-    bottom: 19px;
-    font-family: "amaranth", sans-serif;
-    font-size: 20px;
-    width: 142px;
-    height: 52px;
-    background-color: #3CB833;
-    border-radius: 26px;
-    border: none;
-    color: #ffffff;
+  position: absolute;
+  right: 22px;
+  bottom: 19px;
+  font-family: "amaranth", sans-serif;
+  font-size: 20px;
+  width: 142px;
+  height: 52px;
+  background-color: #3CB833;
+  border-radius: 26px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }

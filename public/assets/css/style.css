@@ -20,6 +20,7 @@ header nav
 header nav .logo-nav
 {
     display:flex;
+    cursor: pointer;
 }
 
 
@@ -52,6 +53,7 @@ header nav ul li a
 header nav ul li img 
 {
   width: 80%;
+  cursor: pointer;
 }
 
 header nav ul li .info
@@ -135,6 +137,7 @@ header .icon-connexion:hover
   color: white;
   border-radius: 5px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .login button:hover
@@ -180,6 +183,7 @@ header .icon-connexion:hover
   color: white;
   border-radius: 5px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .container-deconnexion .button-deconnected:hover
@@ -363,6 +367,8 @@ header .icon-connexion:hover
   margin-top:3%;
   font-family: "amaranth", sans-serif;
   font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
   background-color: #3CB833;
   color: #ffffff;
   display:flex;
@@ -390,6 +396,35 @@ header .icon-connexion:hover
 {
   cursor: pointer;
 }
+
+
+/************
+    404
+*************/
+.container-404
+{
+  margin-top:5%;
+}
+.container-404, .container-404-message
+{
+  width:100%;
+  font-family: 'Titillium Web', sans-serif;
+  color: #44538F;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.container-404 img
+{
+  width:50%;
+  height: 50%;
+  display:flex;
+  justify-content: center;
+}
+
+
+
 
 /************
     footer

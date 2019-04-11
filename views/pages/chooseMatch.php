@@ -6,7 +6,7 @@ include '../views/partials/header.php';
     <form class="selected-match" method="POST">
         <label for="choose-match">Trié par compétition</label>
         <select name="comp" onchange="this.form.submit();">
-            <option value="">Trié</option>
+            <option value="">Compétions</option>
             <option value="FL1">Ligue 1</option>
             <option value="PL">Premier league</option>
             <option value="BL1">Bundesliga</option>
@@ -50,10 +50,8 @@ include '../views/partials/header.php';
             <button type="submit" name="formaddmatch" class="button-matchs">Créée ta ligue</button>
         </div>
     </form>
-    
+
 </div>
-    
-          
 
 <?php 
 include '../views/partials/footer.php';
