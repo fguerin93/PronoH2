@@ -93,4 +93,4 @@
         }
     }
 
-    include '../views/pages/Pronos.php';
+    include '../views/pages/pronos.php';
