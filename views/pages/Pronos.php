@@ -64,4 +64,4 @@
     <!-- fin premier rectangle -->
   </div>
 </div>
-<?php include 'footer.php'; ?>
+<?php include '../views/partials/footer.php' ?>

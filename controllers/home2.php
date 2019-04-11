@@ -13,7 +13,7 @@ if(isset($_POST['formjoinleague']))
         $reqcode->execute(array($code));
         $codeexist = $reqcode->rowCount();
         if($codeexist == 1)
-        {
+        { 
             $leagueinfo = $reqcode->fetch();
             $id_league = $leagueinfo->id;
             var_dump($id_league);
