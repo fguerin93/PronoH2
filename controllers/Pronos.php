@@ -80,6 +80,7 @@
 
     $homeGoalResult = [];
     $awayGoalResult = [];
+
     foreach ($matches as $i => $match)
     {
         $homeGoalResult[$i] = 0;
@@ -88,7 +89,7 @@
         {
             $results = apiRequestByMatch($matches[$i]->id_matches);
             $homeGoalResult[$i] = $results->match->score->fullTime->homeTeam;
-            $homeGoalResult[$i] = $results->match->score->fullTime->homeTeam;
+            $awayGoalResult[$i] = $results->match->score->fullTime->awayTeam;
         }
     }
 
