@@ -45,7 +45,7 @@
                         <div class="myPronos-realInfos">
                             <div class="myPronos-scoreText">
                                 <p class="bet-title">Score</p>
-                                <p class="final-score">0 - 0</p>
+                                <p class="final-score"><?= $homeGoalResult[$i] ?> - <?= $homeGoalResult[$i] ?></p>
                             </div>
                         </div>
                     

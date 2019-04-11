@@ -2,7 +2,12 @@
 
     $title = 'Pronos';
 
-    // include '../controllers/requestApi.php';
+    include '../controllers/requestApi.php';
+
+    // $zer = apiRequestByMatch(239280);
+    // echo '<pre>';
+    // print_r($zer);
+    // echo '</pre>';
 
     //req for variables to put in views
     $qExplode = explode("/",$q);
@@ -69,19 +74,18 @@
 
     //prepare score to display
 
+    $homeGoalResult = [];
+    $awayGoalResult = [];
     foreach ($matches as $i => $match)
     {
-        $homeGoalResult = 0;
-        $awayGoalResult = 0;
+        $homeGoalResult[$i] = 0;
+        $awayGoalResult[$i] = 0;
         if ($matches[$i]->status == 'FINISHED')
         {
             $results = apiRequestByMatch($matches[$i]->id_matches);
-            $homeGoalResult = $results->match->score->fullTime->homeTeam;
-            $homeGoalResult = $results->match->score->fullTime->homeTeam;
+            $homeGoalResult[$i] = $results->match->score->fullTime->homeTeam;
+            $homeGoalResult[$i] = $results->match->score->fullTime->homeTeam;
         }
     }
-
-    
-
 
     include '../views/pages/Pronos.php';
