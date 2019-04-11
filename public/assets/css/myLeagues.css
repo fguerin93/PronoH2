@@ -3,6 +3,11 @@
     margin-bottom: 50px;
 }
 
+.myleague-principal a
+{
+    text-decoration: none;
+}
+
 .myLeague-h2
 {
     font-family: "amaranth", sans-serif;

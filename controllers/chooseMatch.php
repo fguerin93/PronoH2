@@ -31,13 +31,19 @@ if(isset($_POST['formaddmatch']))
         $away_team = $matchesArray[$i]->match->awayTeam->name;
         $date = $matchesArray[$i]->match->utcDate;
 
-        $insertmatches = $pdo->prepare('INSERT INTO matches(id_matches, home_team, away_team, date) VALUES (:id_matches, :home_team, :away_team, :date)');
+        $reqmatches = $pdo->prepare("SELECT * FROM matches WHERE id_matches = ?");
+        $reqmatches->execute(array($idMatches));
+        $matchesExist = $reqmatches->rowCount();
+        if ($matchesExist == 0)
+        {
+            $insertmatches = $pdo->prepare('INSERT INTO matches(id_matches, home_team, away_team, date) VALUES (:id_matches, :home_team, :away_team, :date)');
 
-        $insertmatches->bindValue('id_matches', $id_matches);
-        $insertmatches->bindValue('home_team', $home_team);
-        $insertmatches->bindValue('away_team', $away_team);
-        $insertmatches->bindValue('date', $date);
-        $insertmatches->execute();
+            $insertmatches->bindValue('id_matches', $id_matches);
+            $insertmatches->bindValue('home_team', $home_team);
+            $insertmatches->bindValue('away_team', $away_team);
+            $insertmatches->bindValue('date', $date);
+            $insertmatches->execute();
+        }
 
         //request for max id league
         $idleaguequery = $pdo->query('SELECT id FROM leagues ORDER BY id DESC LIMIT 1');

@@ -12,8 +12,8 @@ if(isset($_POST['forminscription']))
     $pseudolength = strlen($pseudo);
         if($pseudolength <= 255)
         {
-            $reqpseudo = $pdo->prepare("SELECT * FROM users WHERE mail = ?");
-            $reqpseudo->execute(array($mail));
+            $reqpseudo = $pdo->prepare("SELECT * FROM users WHERE pseudo = ?"); //change 
+            $reqpseudo->execute(array($pseudo)); //change
             $pseudoExist = $reqpseudo->rowCount();
             if ($pseudoExist == 0)
             {
