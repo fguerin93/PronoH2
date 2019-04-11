@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 11, 2019 at 06:56 PM
+-- Generation Time: Apr 11, 2019 at 11:41 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -40,10 +40,34 @@ CREATE TABLE `bets` (
 --
 
 INSERT INTO `bets` (`id`, `id_users`, `id_league`, `id_leagues_matches`, `score_home`, `score_away`) VALUES
-(23, 33, 38, 88, 1, 2),
-(24, 33, 38, 89, 3, 3),
-(25, 33, 38, 90, 3, 5),
-(26, 33, 38, 91, 4, 4);
+(33, 34, 43, 103, 5, 3),
+(34, 34, 43, 104, 3, 4),
+(35, 34, 43, 105, 2, 3),
+(36, 36, 43, 103, 2, 7),
+(37, 36, 43, 104, 5, 4),
+(38, 36, 43, 105, 0, 0),
+(44, 36, 42, 99, 6, 5),
+(45, 36, 42, 100, 0, 0),
+(46, 36, 42, 101, 0, 0),
+(47, 36, 42, 102, 1, 2),
+(59, 33, 44, 106, 1, 0),
+(60, 33, 44, 107, 0, 2),
+(61, 33, 44, 113, 1, 1),
+(62, 33, 42, 99, 1, 2),
+(63, 33, 42, 100, 3, 3),
+(64, 33, 42, 101, 2, 1),
+(65, 33, 42, 102, 2, 4),
+(66, 33, 44, 118, 2, 1),
+(67, 33, 47, 115, 1, 3),
+(68, 33, 47, 116, 2, 2),
+(69, 33, 47, 117, 2, 1),
+(70, 33, 47, 119, 1, 1),
+(71, 33, 47, 120, 1, 2),
+(72, 34, 43, 121, 3, 3),
+(73, 35, 43, 103, 2, 3),
+(74, 35, 43, 104, 1, 2),
+(75, 35, 43, 105, 0, 0),
+(76, 35, 43, 121, 3, 3);
 
 -- --------------------------------------------------------
 
@@ -64,15 +88,12 @@ CREATE TABLE `leagues` (
 --
 
 INSERT INTO `leagues` (`id`, `name`, `id_creator`, `code`, `message`) VALUES
-(31, 'felixligue', 33, 'felixcode', 'felixmessage'),
-(32, 'colineligue', 34, 'colinecode', 'colinemessage'),
-(33, 'diegoligue', 35, 'diegocode', 'diegomessage'),
-(34, 'diegoligue2', 35, 'diegocode2', 'diegocode2'),
-(35, 'felixligue3', 33, 'felixcode3', 'felixmessage3'),
-(36, 'felixligue2', 33, 'felixcode2', 'felixmessage2'),
-(37, 'easy', 33, 'easy', 'easy'),
-(38, 'hey', 33, 'hey', 'hey'),
-(39, 'new', 33, 'new', 'new');
+(42, 'brunoligue', 36, 'brunocode', 'brunomessage'),
+(43, 'brunoligue2', 36, 'brunocode2', 'brunomessage2'),
+(44, 'felixligue', 33, 'felixcode', 'felixmessage'),
+(45, 'diegoligue', 35, 'diegocode', 'diegomessage'),
+(46, 'felixligue2', 33, 'felixcode2', 'felixmessage2'),
+(47, 'felixligue3', 33, 'felixcode3', 'felixmessage3');
 
 -- --------------------------------------------------------
 
@@ -91,36 +112,29 @@ CREATE TABLE `league_matches` (
 --
 
 INSERT INTO `league_matches` (`id`, `id_league`, `id_match`) VALUES
-(66, 31, 239308),
-(67, 31, 239304),
-(68, 31, 239306),
-(69, 31, 239265),
-(70, 32, 239308),
-(71, 32, 239309),
-(72, 32, 239265),
-(73, 32, 239316),
-(74, 32, 239318),
-(75, 33, 248096),
-(76, 33, 248111),
-(77, 33, 248104),
-(78, 34, 248102),
-(79, 34, 248096),
-(80, 35, 239308),
-(81, 35, 239318),
-(82, 36, 239308),
-(83, 36, 239305),
-(84, 36, 239265),
-(85, 36, 239315),
-(86, 37, 239308),
-(87, 37, 239265),
-(88, 38, 239308),
-(89, 38, 239305),
-(90, 38, 239265),
-(91, 38, 239310),
-(92, 39, 233357),
-(93, 39, 233330),
-(94, 39, 233364),
-(95, 39, 233371);
+(99, 42, 239304),
+(100, 42, 239306),
+(101, 42, 239301),
+(102, 42, 239311),
+(103, 43, 246424),
+(104, 43, 246422),
+(105, 43, 246435),
+(106, 44, 239308),
+(107, 44, 239265),
+(108, 45, 235941),
+(109, 45, 235940),
+(110, 45, 235943),
+(111, 45, 235946),
+(112, 45, 235955),
+(113, 44, 239280),
+(114, 46, 235941),
+(115, 47, 233357),
+(116, 47, 233369),
+(117, 47, 233366),
+(118, 44, 239283),
+(119, 47, 233339),
+(120, 47, 233340),
+(121, 43, 246409);
 
 -- --------------------------------------------------------
 
@@ -139,17 +153,18 @@ CREATE TABLE `league_users` (
 --
 
 INSERT INTO `league_users` (`id`, `id_league`, `id_users`) VALUES
-(21, 31, 33),
-(22, 31, 34),
-(23, 32, 34),
-(24, 33, 35),
-(25, 31, 35),
-(26, 34, 35),
-(27, 35, 33),
-(28, 36, 33),
-(29, 37, 33),
-(30, 38, 33),
-(31, 39, 33);
+(34, 42, 36),
+(35, 43, 36),
+(36, 42, 33),
+(37, 44, 33),
+(38, 45, 35),
+(39, 44, 35),
+(40, 43, 35),
+(41, 44, 34),
+(42, 43, 34),
+(43, 46, 33),
+(44, 47, 33),
+(45, 43, 34);
 
 -- --------------------------------------------------------
 
@@ -171,24 +186,28 @@ CREATE TABLE `matches` (
 --
 
 INSERT INTO `matches` (`id`, `id_matches`, `home_team`, `away_team`, `date`, `status`) VALUES
-(109, 239308, 'Dijon Football Côte d\'Or', 'Amiens SC', '2019-04-12T17:00:00Z', ''),
-(110, 239304, 'Olympique de Marseille', 'Nîmes Olympique', '2019-04-13T15:00:00Z', ''),
-(111, 239306, 'AS Monaco FC', 'Stade de Reims', '2019-04-13T18:00:00Z', ''),
-(112, 239265, 'FC Nantes', 'Paris Saint-Germain FC', '2019-04-17T17:00:00Z', ''),
-(113, 239309, 'RC Strasbourg Alsace', 'En Avant Guingamp', '2019-04-13T18:00:00Z', ''),
-(114, 239316, 'Dijon Football Côte d\'Or', 'Stade Rennais FC 1901', '2019-04-20T18:00:00Z', ''),
-(115, 239318, 'RC Strasbourg Alsace', 'Montpellier HSC', '2019-04-20T18:00:00Z', ''),
-(116, 248096, 'AC Milan', 'SS Lazio', '2019-04-13T18:30:00Z', ''),
-(117, 248111, 'Bologna FC 1909', 'UC Sampdoria', '2019-04-20T13:00:00Z', ''),
-(118, 248104, 'Juventus FC', 'ACF Fiorentina', '2019-04-20T16:00:00Z', ''),
-(119, 248102, 'SPAL 2013', 'Juventus FC', '2019-04-13T13:00:00Z', ''),
-(120, 239305, 'FC Nantes', 'Olympique Lyonnais', '2019-04-12T18:45:00Z', ''),
-(121, 239315, 'En Avant Guingamp', 'Olympique de Marseille', '2019-04-20T15:00:00Z', ''),
-(122, 239310, 'Olympique Lyonnais', 'Angers SCO', '2019-04-19T18:45:00Z', ''),
-(123, 233357, 'Leicester City FC', 'Newcastle United FC', '2019-04-12T19:00:00Z', 'SCHEDULED'),
-(124, 233330, 'Brighton & Hove Albion FC', 'Cardiff City FC', '2019-04-16T18:45:00Z', 'SCHEDULED'),
-(125, 233364, 'Manchester City FC', 'Tottenham Hotspur FC', '2019-04-20T11:30:00Z', 'SCHEDULED'),
-(126, 233371, 'West Ham United FC', 'Leicester City FC', '2019-04-20T14:00:00Z', 'SCHEDULED');
+(127, 239304, 'Olympique de Marseille', 'Nîmes Olympique', '2019-04-13T15:00:00Z', 'SCHEDULED'),
+(128, 239306, 'AS Monaco FC', 'Stade de Reims', '2019-04-13T18:00:00Z', 'SCHEDULED'),
+(129, 239301, 'Lille OSC', 'Paris Saint-Germain FC', '2019-04-14T19:00:00Z', 'SCHEDULED'),
+(130, 239311, 'Toulouse FC', 'Lille OSC', '2019-04-21T13:00:00Z', 'SCHEDULED'),
+(131, 246424, 'Sevilla FC', 'Real Betis Balompié', '2019-04-13T18:45:00Z', 'SCHEDULED'),
+(132, 246422, 'Valencia CF', 'Levante UD', '2019-04-14T18:45:00Z', 'SCHEDULED'),
+(133, 246435, 'Getafe CF', 'Sevilla FC', '2019-04-21T12:00:00Z', 'SCHEDULED'),
+(134, 239308, 'Dijon Football Côte d\'Or', 'Amiens SC', '2019-04-12T17:00:00Z', 'SCHEDULED'),
+(135, 239265, 'FC Nantes', 'Paris Saint-Germain FC', '2019-04-17T17:00:00Z', 'SCHEDULED'),
+(136, 235941, '1. FC Nürnberg', 'FC Schalke 04', '2019-04-12T18:30:00Z', 'SCHEDULED'),
+(137, 235940, 'VfB Stuttgart', 'Bayer 04 Leverkusen', '2019-04-13T13:30:00Z', 'SCHEDULED'),
+(138, 235943, 'Hannover 96', 'Borussia Mönchengladbach', '2019-04-13T13:30:00Z', 'SCHEDULED'),
+(139, 235946, 'RB Leipzig', 'VfL Wolfsburg', '2019-04-13T13:30:00Z', 'SCHEDULED'),
+(140, 235955, 'FC Augsburg', 'VfB Stuttgart', '2019-04-20T13:30:00Z', 'SCHEDULED'),
+(145, 239280, 'Montpellier HSC', 'En Avant Guingamp', '2019-04-04T09:32:57Z', 'FINISHED'),
+(146, 239283, 'Toulouse FC', 'Paris Saint-Germain FC', '2019-03-31T19:00:00Z', 'FINISHED'),
+(147, 233357, 'Leicester City FC', 'Newcastle United FC', '2019-04-12T19:00:00Z', 'SCHEDULED'),
+(148, 233369, 'Huddersfield Town AFC', 'Watford FC', '2019-04-20T14:00:00Z', 'SCHEDULED'),
+(149, 233366, 'Arsenal FC', 'Crystal Palace FC', '2019-04-21T15:00:00Z', 'SCHEDULED'),
+(150, 233340, 'West Ham United FC', 'Everton FC', '2019-03-30T17:30:00Z', 'FINISHED'),
+(151, 246409, 'SD Huesca', 'RC Celta de Vigo', '2019-04-03T18:30:00Z', 'FINISHED'),
+(152, 233339, 'Cardiff City FC', 'Chelsea FC', '2019-03-31T13:05:00Z', 'FINISHED');
 
 -- --------------------------------------------------------
 
@@ -210,7 +229,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `pseudo`, `mail`, `password`) VALUES
 (33, 'felix', 'felix@mail.fr', '9c69098d379350e157eff4ad93150662007b8fb2'),
 (34, 'coline', 'coline@mail.fr', '91a170e95dbf734c38df395142f8557f16fe5634'),
-(35, 'diego', 'diego@mail.fr', '8354336224c63279aadd00a9621757ef4fdf31fc');
+(35, 'diego', 'diego@mail.fr', '8354336224c63279aadd00a9621757ef4fdf31fc'),
+(36, 'bruno', 'bruno@mail.fr', '660609b171607ff3dcd294929e5d8239736f4298');
 
 --
 -- Indexes for dumped tables
@@ -260,37 +280,37 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bets`
 --
 ALTER TABLE `bets`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT for table `leagues`
 --
 ALTER TABLE `leagues`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `league_matches`
 --
 ALTER TABLE `league_matches`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
 
 --
 -- AUTO_INCREMENT for table `league_users`
 --
 ALTER TABLE `league_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `matches`
 --
 ALTER TABLE `matches`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=153;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
