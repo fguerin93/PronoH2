@@ -9,8 +9,6 @@ let deconnexionIsOpen = false
 
 iconOpen.addEventListener('click', () =>
 {
-    console.log(connexionValue.textContent)
-
     if (connexionValue.textContent=='false')
     {
         if(!connexionIsOpen) 
