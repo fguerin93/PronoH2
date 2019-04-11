@@ -71,6 +71,11 @@
     foreach ($matches as $i => $match)
     {
         var_dump($matches[$i]->status);
+
+        if ($matches[$i]->status == 'FINISHED')
+        {
+            echo 'hi';
+        }
     }
 
 
