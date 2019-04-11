@@ -6,11 +6,11 @@
         <h1>Mes pronos</h1>
         <div class="myPronos-ranking">
             <img src="" alt="">
-            <p>tu es actuellement 1er/6 de ta ligue BRAVO !</p>
+            <p>tu es actuellement <span>1er/6 </span>de ta ligue BRAVO !</p>
         </div>
         <div class="myPronos-code">
-            <p>code d'invitation:</p>
-            <p><?= $code[0]->code ?></p>
+            <p>Code d'invitation:</p>
+            <p class="code-name"><?= $code[0]->code ?></p>
         </div>
     </div>
 
@@ -29,10 +29,10 @@
                     <div class="myPronos-globalscore">
                         <div class="myPronos-pronoInfos">
                             <div class="myPronos-pronoLabel">
-                                <label for="prono">Mon prono</label>
+                                <label for="prono" class="bet-title">Mon prono</label>
                                 <div class="myPronos-inputScore">
                                     <input type="number" id="scoreProno" name="home_goals[]" min="0" max="10" value="<?= $homeGoalsArray[$i] ?>">
-                                    <p>-</p>
+                                    <p class="separation">-</p>
                                     <input type="number" id="scoreProno" name="away_goals[]" min="0" max="10" value="<?= $awayGoalsArray[$i] ?>">
                                 </div>
                             </div>
@@ -40,8 +40,8 @@
 
                         <div class="myPronos-realInfos">
                             <div class="myPronos-scoreText">
-                                <p>Score</p>
-                                <p>0 - 0</p>
+                                <p class="bet-title">Score</p>
+                                <p class="final-score">0 - 0</p>
                             </div>
                         </div>
                     
@@ -59,7 +59,9 @@
                     </div>
                 </div>
             <?php } ?>
-            <input type="submit" name="formbets" value="Valider" class="bets-button" />
+            <div class="position-button">
+                <input type="submit" name="formbets" value="Valider" class="bets-button" />
+            </div>
         </form>
 
         <!-- fin premier rectangle -->
