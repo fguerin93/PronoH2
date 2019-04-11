@@ -57,8 +57,3 @@ else if ($q == 'ranking')
 {
     $controller = 'ranking';
 }
-
-// else if ($q == 'about-us')
-// {
-//     $controller = 'about';
-// }
