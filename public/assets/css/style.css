@@ -1,5 +1,5 @@
 /************
-    nav
+    NAV
 *************/
 
 header 
@@ -189,6 +189,66 @@ header .icon-connexion:hover
 .container-deconnexion .button-deconnected:hover
 {
   cursor: pointer;
+}
+
+
+/*****************
+    information nav
+********************/
+
+.container-informations
+{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20%;
+  padding-top: 1%;
+  padding-right: 20%;
+  display:none;
+  z-index: 1;
+}
+
+.container-informations .header{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top:1%;
+  padding-bottom:1%;
+  background: #44538F;
+  color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.container-informations .content
+{
+  padding-top:5%;
+  padding-bottom:5%;
+  border: 1px solid #44538F;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: white;
+}
+
+.container-informations .header h2
+{
+  padding-top:2.5%;
+  font-size: 20px;
+}
+
+.container-informations .header img
+{
+  position: relative;
+  left:30%;
+  cursor: pointer;
+}
+
+.container-informations .content p
+{
+  padding: 2% 10%;
+  line-height: 24px;
 }
 
 /************
@@ -403,8 +463,9 @@ header .icon-connexion:hover
 *************/
 .container-404
 {
-  margin-top:5%;
+  margin-top:4%;
 }
+
 .container-404, .container-404-message
 {
   width:100%;
@@ -415,6 +476,11 @@ header .icon-connexion:hover
   display: flex;
   justify-content: center;
 }
+.container-404, .container-404-message p
+{
+  padding-top:4%;
+}
+
 .container-404 img
 {
   width:50%;
