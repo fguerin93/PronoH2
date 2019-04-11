@@ -78,10 +78,10 @@ label {
 
 .myPronos-sqare
 {
-  background: #44538F;
-  color: #ffffff;
   width: 100%;
   height: 165px;
+  background: #44538F;
+  color: #ffffff;
   display: flex;
   justify-content: space-around;
 }
@@ -94,8 +94,8 @@ label {
 
 .myPronos-sqare .myPronos-date
 {
-  height: 100%;
   width:20%;
+  height: 100%;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -122,10 +122,11 @@ label {
 
 .myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos .myPronos-pronoLabel .myPronos-inputScore
 {
-  display: flex;
   width:90%;
-  justify-content: center;
   margin-left:5%;
+  display: flex;
+  justify-content: center;
+
 }
 .separation
 {
@@ -170,11 +171,11 @@ label {
 
 .myPronos-sqare .myPronos-globalscore
 {
+  width:40%;
+  height: 100%;
   display:flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width:40%;
 }
 
 .myPronos-sqare .myPronos-globalscore .myPronos-pronoInfos, .myPronos-realInfos

@@ -4,15 +4,14 @@
 
     <div class="myPronos-content">
         <h1>Mes pronos</h1>
-        <div class="prono-ranking-code">
-            <div class="myPronos-ranking">
-                <img src="" alt="">
-                <p>Tu es actuellement <span>1er/6 </span>de ta ligue BRAVO !</p>
-            </div>
-            <div class="myPronos-code">
-                <p>Code d'invitation:</p>
-                <p class="code-name"><?= $code[0]->code ?></p>
-            </div>
+    <div class="prono-ranking-code">
+        <div class="myPronos-ranking">
+            <img src="" alt="">
+            <p>Tu es actuellement <span>1er/ <?= getNumberInLeague($idLeague) ?></span>de ta ligue BRAVO !</p>
+        </div>
+        <div class="myPronos-code">
+            <p>Code d'invitation:</p>
+            <p class="code-name"><?= $code[0]->code ?></p>
         </div>
     </div>
 
