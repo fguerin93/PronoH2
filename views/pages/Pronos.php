@@ -23,7 +23,7 @@
             <?php foreach ($matches as $i => $match) { ?>    
                 <div class="myPronos-sqare">
                     <div class="myPronos-date">
-                        <p><?= $matches[$i]->date ?></p>
+                        <p><?= str_replace('T', ' ',substr($matches[$i]->date, 0, -4)) ?></p>
                     </div>
 
                     <div class="myPronos-globalscore">

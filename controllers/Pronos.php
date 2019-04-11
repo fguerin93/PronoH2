@@ -2,6 +2,8 @@
 
     $title = 'Pronos';
 
+    // include '../controllers/requestApi.php';
+
     //req for variables to put in views
     $qExplode = explode("/",$q);
     $idLeague = strval($qExplode[1]);
@@ -16,7 +18,7 @@
     $code = $reqcode->fetchAll();
 
     //form for bets
-    $reqpronos = $pdo->query('SELECT score_home, score_away FROM bets WHERE id_league = '.$idLeague);
+    $reqpronos = $pdo->query('SELECT score_home, score_away FROM bets WHERE id_league = '.$idLeague.' AND id_users = '.$_SESSION['id']);
     $pronos = $reqpronos->fetchAll();
 
     if(isset($_POST['formbets']))
@@ -44,17 +46,17 @@
 
             for ($i = 0; $i < sizeof($homeGoalsArray); $i++)
             {
-                $reqidleaguematches = $pdo->prepare("SELECT * FROM bets WHERE id_leagues_matches = ?");
-                $reqidleaguematches->execute(array($idLeaguesMatches[$i]->id));
+                $reqidleaguematches = $pdo->prepare("SELECT * FROM bets WHERE id_leagues_matches = ? AND id_users = ?");
+                $reqidleaguematches->execute(array($idLeaguesMatches[$i]->id,$_SESSION['id']));
                 $idLeagueMatchesExist = $reqidleaguematches->rowCount();
                 if($idLeagueMatchesExist == 0)
                 {
                     $insertmbr = $pdo->prepare("INSERT INTO bets(id_users, id_league, id_leagues_matches, score_home, score_away) VALUES(?, ?, ?, ?, ?)");
                     $insertmbr->execute(array($idUsers, $idLeague, $idLeaguesMatches[$i]->id, $homeGoalsArray[$i], $awayGoalsArray[$i]));
-                    header('location: pronos/'.$idLeague);
+                    header('location: ../pronos/'.$idLeague);
                 }
                 else {
-                    $updatembr = $pdo->exec('UPDATE bets SET score_home = '.$homeGoalsArray[$i].', score_away = '.$awayGoalsArray[$i].' WHERE id_leagues_matches='.$idLeaguesMatches[$i]->id);
+                    $updatembr = $pdo->exec('UPDATE bets SET score_home = '.$homeGoalsArray[$i].', score_away = '.$awayGoalsArray[$i].' WHERE id_leagues_matches='.$idLeaguesMatches[$i]->id.' AND id_users ='.$_SESSION['id']);
                     header('location: ../pronos/'.$idLeague);
                 }
             }
@@ -69,11 +71,17 @@
 
     foreach ($matches as $i => $match)
     {
+        $homeGoalResult = 0;
+        $awayGoalResult = 0;
         if ($matches[$i]->status == 'FINISHED')
         {
-            echo 'hi';
+            $results = apiRequestByMatch($matches[$i]->id_matches);
+            $homeGoalResult = $results->match->score->fullTime->homeTeam;
+            $homeGoalResult = $results->match->score->fullTime->homeTeam;
         }
     }
+
+    
 
 
     include '../views/pages/Pronos.php';

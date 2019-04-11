@@ -27,7 +27,7 @@ include '../views/partials/header.php';
                         <p><?= $matches->matches[$i]->homeTeam->name ?></p>
                         <p class="match-to-select-vs">VS</p>
                         <p><?= $matches->matches[$i]->awayTeam->name ?></p>
-                        <p><?= $matches->matches[$i]->utcDate ?></p>
+                        <p><?= str_replace('T', ' ',substr($matches->matches[$i]->utcDate, 0, -4)) ?></p>
                     </div>
                     <?php } ?>
                 </div>
@@ -38,7 +38,7 @@ include '../views/partials/header.php';
                         <p><?= $matches->matches[$i]->homeTeam->name ?></p>
                         <p class="match-to-select-vs">VS</p>
                         <p><?= $matches->matches[$i]->awayTeam->name ?></p>
-                        <p><?= $matches->matches[$i]->utcDate ?></p>
+                        <p><?= str_replace('T', ' ',substr($matches->matches[$i]->utcDate, 0, -4)) ?></p>
                     </div>
                     <?php } ?>
                 </div>
