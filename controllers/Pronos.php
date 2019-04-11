@@ -54,7 +54,6 @@
                     header('location: pronos/'.$idLeague);
                 }
                 else {
-                    var_dump($idLeaguesMatches[$i]->id);
                     $updatembr = $pdo->exec('UPDATE bets SET score_home = '.$homeGoalsArray[$i].', score_away = '.$awayGoalsArray[$i].' WHERE id_leagues_matches='.$idLeaguesMatches[$i]->id);
                     header('location: ../pronos/'.$idLeague);
                 }
@@ -70,8 +69,6 @@
 
     foreach ($matches as $i => $match)
     {
-        var_dump($matches[$i]->status);
-
         if ($matches[$i]->status == 'FINISHED')
         {
             echo 'hi';
