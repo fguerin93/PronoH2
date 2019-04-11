@@ -1,4 +1,6 @@
-     <div class="ranking-container">
+<?php include '../views/partials/header.php'; ?>
+
+    <div class="ranking-container">
         <div class="ranking-content">
             <h1>Hetic Football</h1>
             <div class="rank-row">
@@ -37,3 +39,5 @@
                 </table>
         </div>   
     </div>
+
+<?php include '../views/partials/footer.php' ?>
