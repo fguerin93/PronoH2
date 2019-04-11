@@ -1,5 +1,5 @@
 /***************************
-  choose what competition 
+  choose what competition
 ***************************/
 .container-matchs
 {
@@ -22,6 +22,7 @@
 .container-matchs .selected-match
 {
   margin-bottom:3%;
+  position: relative;
 }
 
 .container-matchs .selected-match label
@@ -52,11 +53,8 @@
   choose what competition - option
 **********************************/
 
-.container-matchs .selected-match option {
-
-
+.container-matchs .selected-match select{
 }
-
 
 /******************
   select match

@@ -10,5 +10,6 @@
         </footer>
         <script src="<?=URL?>assets/js/login.js"></script>
         <script src="<?=URL?>assets/js/chooseMatch.js"></script>
+        <script src="<?=URL?>assets/js/info.js"></script>
     </body>
 </html>
