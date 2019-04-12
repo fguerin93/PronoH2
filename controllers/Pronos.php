@@ -6,11 +6,6 @@
     include '../controllers/getScore.php';
     include '../controllers/updateScore.php';
 
-    // $zer = apiRequestByMatch(233339);
-    // echo '<pre>';
-    // print_r($zer);
-    // echo '</pre>';
-
     //explode url to get league
     $qExplode = explode("/",$q);
     $idLeague = strval($qExplode[1]);
@@ -88,6 +83,7 @@
     $homeGoalResult = [];
     $awayGoalResult = [];
 
+    $score = $userLogScore[0]->score;
     foreach ($matches as $i => $match)
     {
         $homeGoalResult[$i] = 0;
