@@ -4,6 +4,7 @@
 
     include '../controllers/requestApi.php';
     include '../controllers/getScore.php';
+    include '../controllers/updateScore.php';
 
     // $zer = apiRequestByMatch(233339);
     // echo '<pre>';
@@ -30,6 +31,8 @@
     $reqpronos = $pdo->query('SELECT score_home, score_away FROM bets WHERE id_league = '.$idLeague.' AND id_users = '.$_SESSION['id']);
     $pronos = $reqpronos->fetchAll();
 
+
+    //form for bets
     if(isset($_POST['formbets']))
     {
         $homeGoalsArray = $_POST['home_goals'];
@@ -76,6 +79,10 @@
 
     }
 
+    //Test place in ranking of user login
+    $userLogScore = getScoreUser($idLeague, $_SESSION['id']);
+    $userScores = getScoreOtherUsers($idLeague);
+
     //prepare score to display
 
     $homeGoalResult = [];
@@ -90,7 +97,30 @@
             $results = apiRequestByMatch($matches[$i]->id_matches);
             $homeGoalResult[$i] = $results->match->score->fullTime->homeTeam;
             $awayGoalResult[$i] = $results->match->score->fullTime->awayTeam;
+
+            if (($homeGoalResult[$i]==$pronos[$i]->score_home) && ($awayGoalResult[$i]==$pronos[$i]->score_away))
+            {
+                $score = $userLogScore[0]->score + 5;
+            }
         }
     }
+
+    //update score
+    updateScore($score, $_SESSION['id'], $idLeague);
+
+    //Test place in ranking of user login
+    $userLogScore = getScoreUser($idLeague, $_SESSION['id']);
+    $userScores = getScoreOtherUsers($idLeague);
+
+    $place = 1;
+
+    foreach ($userScores as $i => $value)
+    {
+        if ($userLogScore[0]->score==$userScores[$i]->score)
+        {
+            $place=$i+1;
+        }
+    }
+    
 
     include '../views/pages/pronos.php';
