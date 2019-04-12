@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="<?=URL?>assets/css/inscription.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/chooseMatch.css">
     <link rel="stylesheet" href="<?=URL?>assets/css/pronos.css">
-    <link rel="icon" href="<?=URL?>assets/images/ball.svg">
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web" rel="stylesheet">
 </head>
 <body>
